@@ -1,3 +1,6 @@
 .css-truncate.css-truncate-target {
 	display: inline !important;
 }
+form#new_issue div.column.main {
+  width: 100% !important;
+}
