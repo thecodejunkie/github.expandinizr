@@ -1,6 +1,11 @@
 # Github.Expandinizr
 
-Chrome extension that removes the truncation of directory and file names in the GitHub repository browser, by injecting custom css into the page.
+Chrome extension that improves the GitHub experience
+
+Currently enhances the following:
+
+- Removes the truncating of file and directory names in the repository browser
+- Expands the issue form to full width
 
 ## Author
 
