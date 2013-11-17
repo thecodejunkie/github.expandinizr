@@ -1,6 +1,18 @@
 .css-truncate.css-truncate-target {
 	display: inline !important;
 }
+
 form#new_issue div.column.main {
   width: 100% !important;
+}
+
+form#new_issue div.column.sidebar {
+	float: none;
+	margin-left: 60px;
+	margin-top: -50px;	
+	width: 90%;
+}
+
+form#new_issue div.column.sidebar li {
+	float: left;
 }
