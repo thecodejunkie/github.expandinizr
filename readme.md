@@ -13,6 +13,7 @@ Andreas Håkansson
 
 ## Changelog
 
+- v1.1.0 - Expands the issue form to full width
 - v1.0.0 - First release of the extension
 
 ## License
