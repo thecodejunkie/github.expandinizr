@@ -1,5 +1,6 @@
 .css-truncate.css-truncate-target {
-	display: inline !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
 }
 
 form#new_issue div.column.main {
