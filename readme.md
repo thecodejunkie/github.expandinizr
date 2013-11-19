@@ -13,8 +13,9 @@ Andreas Håkansson
 
 ## Changelog
 
+- v1.2.0 - Improved the un-truncting to word-wrap (thanks Frank Radocaj)
 - v1.1.1 - Fix for labels on the expanded issue form
-- v1.1.0 - Expands the issue form to full width
+- v1.1.0 - Expands the issue form to full width (thanks Phillip Haydon)
 - v1.0.0 - First release of the extension
 
 ## License
