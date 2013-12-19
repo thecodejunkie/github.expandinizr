@@ -34,6 +34,10 @@ form#new_issue div.column.sidebar li {
 	.repository-with-sidebar.with-full-navigation .repository-content {
 		width: 1090px !important;
 	}
+    
+    .discussion-timeline {
+        width: 1090px !important;
+    }
 	
 	.content .css-truncate.css-truncate-target {
 		max-width: 500px !important;
@@ -52,6 +56,10 @@ form#new_issue div.column.sidebar li {
 	.repository-with-sidebar.with-full-navigation .repository-content {
 		width: 1290px !important;
 	}
+    
+    .discussion-timeline {
+        width: 1290px !important;
+    }
 	
 	.content .css-truncate.css-truncate-target {
 		max-width: 700px !important;
@@ -70,6 +78,10 @@ form#new_issue div.column.sidebar li {
 	.repository-with-sidebar.with-full-navigation .repository-content {
 		width: 1490px !important;
 	}
+    
+    .discussion-timeline {
+        width: 1490px !important;
+    }
 	
 	.content .css-truncate.css-truncate-target {
 		max-width: 900px !important;
