@@ -4,18 +4,18 @@
 }
 
 form#new_issue div.column.main {
-	width: 100% !important;
+    width: 100% !important;
 }
 
 form#new_issue div.column.sidebar {
-	float: none;
-	margin-left: 60px;
-	margin-top: -50px;	
-	width: 90%;
+    float: none;
+    margin-left: 60px;
+    margin-top: -50px;	
+    width: 90%;
 }
 
 form#new_issue div.column.sidebar li {
-	float: left;
+    float: left;
 }
 
 .content .css-truncate.css-truncate-target {
@@ -23,67 +23,67 @@ form#new_issue div.column.sidebar li {
 }
 
 @media (min-width: 1400px) {
-	.container {
-		width: 1280px;
-	}
+    .container {
+        width: 1280px !important;
+    }
 	
-	.repository-with-sidebar .repository-content {
-		width: 1220px  !important;
-	}
+    .repository-with-sidebar .repository-content {
+        width: 1220px !important;
+    }
 	
-	.repository-with-sidebar.with-full-navigation .repository-content {
-		width: 1090px !important;
-	}
+    .repository-with-sidebar.with-full-navigation .repository-content {
+        width: 1090px !important;
+    }
     
     .discussion-timeline {
         width: 1090px !important;
     }
 	
-	.content .css-truncate.css-truncate-target {
-		max-width: 500px !important;
-	}
+    .content .css-truncate.css-truncate-target {
+        max-width: 500px !important;
+    }
 }
 
 @media (min-width: 1600px) {
-	.container {
-		width: 1480px;
-	}
-	
-	.repository-with-sidebar .repository-content {
-		width: 1420px  !important;
-	}
-	
-	.repository-with-sidebar.with-full-navigation .repository-content {
-		width: 1290px !important;
-	}
-    
+    .container {
+        width: 1480px !important;
+    }
+
+    .repository-with-sidebar .repository-content {
+        width: 1420px  !important;
+    }
+
+    .repository-with-sidebar.with-full-navigation .repository-content {
+        width: 1290px !important;
+    }
+
     .discussion-timeline {
         width: 1290px !important;
     }
-	
-	.content .css-truncate.css-truncate-target {
-		max-width: 700px !important;
-	}
+
+    .content .css-truncate.css-truncate-target {
+        max-width: 700px !important;
+    }
 }
 
 @media (min-width: 1800px) {
-	.container {
-		width: 1680px;
-	}
-	
-	.repository-with-sidebar .repository-content {
-		width: 1620px  !important;
-	}
-	
-	.repository-with-sidebar.with-full-navigation .repository-content {
-		width: 1490px !important;
-	}
-    
+    .container {
+        width: 1680px !important;
+    }
+
+    .repository-with-sidebar .repository-content {
+        width: 1620px !important;
+    }
+
+    .repository-with-sidebar.with-full-navigation .repository-content {
+        width: 1490px !important;
+    }
+
     .discussion-timeline {
         width: 1490px !important;
     }
-	
-	.content .css-truncate.css-truncate-target {
-		max-width: 900px !important;
-	}
+
+    .content .css-truncate.css-truncate-target {
+        max-width: 900px !important;
+    }
 }
