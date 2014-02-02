@@ -1,18 +1,26 @@
-# Github.Expandinizr
+# Github.ExpandinizR
 
 Chrome extension that improves the GitHub experience
 
 Currently enhances the following:
 
 - Removes the truncating of file and directory names in the repository browser
-- Expands the issue form to full width
+- Really long file and directory names will word-wrap
+- Fully expands the website, with breakpoints at 1400px, 1600px and 1800px
 
 ## Author
 
 Andreas Håkansson
 
+## Contributors
+
+ - [Phillip Haydon](https://github.com/phillip-haydon)
+ - [Frank Radocaj](https://github.com/frankradocaj)
+ - [Kristian Hellang](https://github.com/khellang)
+
 ## Changelog
 
+- v1.3.0 - Changed to a responsive approach
 - v1.2.0 - Improved the un-truncting to word-wrap (thanks Frank Radocaj)
 - v1.1.1 - Fix for labels on the expanded issue form
 - v1.1.0 - Expands the issue form to full width (thanks Phillip Haydon)
