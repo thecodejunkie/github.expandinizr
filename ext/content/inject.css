@@ -11,25 +11,45 @@
     .container {
         width: 1280px !important;
     }
-	
+
     .repository-with-sidebar .repository-content {
         width: 1220px !important;
     }
-	
+
     .repository-with-sidebar.with-full-navigation .repository-content {
         width: 1090px !important;
     }
-    
-    .discussion-timeline {
-        width: 1060px !important;
-    }
-	
+
     .content .css-truncate.css-truncate-target {
         max-width: 500px !important;
     }
 
-    .new-discussion-timeline .column.main {
+    .org-main {
+        width: 940px !important;
+    }
+    
+    .news {
+        width: 920px !important;
+    }
+
+    .column-main {
         width: 1020px !important;
+    }
+    
+    .settings-content {
+        width: 1020px !important;
+    }
+    
+    .discussion-timeline-cols .main {
+        width: 920px !important;
+    }
+
+    .pull-request-composer .discussion-topic {
+        width: 1032px !important;
+    }
+
+    .discussion-timeline {
+        width: 1060px !important;
     }
 }
 
@@ -46,16 +66,36 @@
         width: 1290px !important;
     }
 
-    .discussion-timeline {
-        width: 1260px !important;
-    }
-
     .content .css-truncate.css-truncate-target {
         max-width: 700px !important;
     }
 
-    .new-discussion-timeline .column.main {
+    .org-main {
+        width: 1140px !important;
+    }
+    
+    .news {
+        width: 1120px !important;
+    }
+
+    .column-main {
         width: 1220px !important;
+    }
+    
+    .settings-content {
+        width: 1220px !important;
+    }
+    
+    .discussion-timeline-cols .main {
+        width: 1120px !important;
+    }
+
+    .pull-request-composer .discussion-topic {
+        width: 1232px !important;
+    }
+
+    .discussion-timeline {
+        width: 1260px !important;
     }
 }
 
@@ -72,6 +112,34 @@
         width: 1490px !important;
     }
 
+    .content .css-truncate.css-truncate-target {
+        max-width: 900px !important;
+    }
+
+    .org-main {
+        width: 1340px !important;
+    }
+    
+    .news {
+        width: 1320px !important;
+    }
+
+    .column-main {
+        width: 1420px !important;
+    }
+    
+    .settings-content {
+        width: 1420px !important;
+    }
+    
+    .discussion-timeline-cols .main {
+        width: 1120px !important;
+    }
+
+    .pull-request-composer .discussion-topic {
+        width: 1432px !important;
+    }
+
     .discussion-timeline {
         width: 1460px !important;
     }
@@ -82,13 +150,5 @@
 
     .timeline-comment-wrapper .timeline-comment {
         width: 1395px !important;
-    }
-
-    .content .css-truncate.css-truncate-target {
-        max-width: 900px !important;
-    }
-
-    .new-discussion-timeline .column.main {
-        width: 1420px !important;
     }
 }
