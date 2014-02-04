@@ -27,6 +27,10 @@
     .org-main {
         width: 940px !important;
     }
+    
+    .news {
+        width: 920px !important;
+    }
 
     .column-main {
         width: 1020px !important;
@@ -69,6 +73,10 @@
     .org-main {
         width: 1140px !important;
     }
+    
+    .news {
+        width: 1120px !important;
+    }
 
     .column-main {
         width: 1220px !important;
@@ -110,6 +118,10 @@
 
     .org-main {
         width: 1340px !important;
+    }
+    
+    .news {
+        width: 1320px !important;
     }
 
     .column-main {
