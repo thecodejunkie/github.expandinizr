@@ -32,6 +32,10 @@
         width: 1020px !important;
     }
     
+    .settings-content {
+        width: 1020px !important;
+    }
+    
     .discussion-timeline-cols .main {
         width: 920px !important;
     }
@@ -70,6 +74,10 @@
         width: 1220px !important;
     }
     
+    .settings-content {
+        width: 1220px !important;
+    }
+    
     .discussion-timeline-cols .main {
         width: 1120px !important;
     }
@@ -105,6 +113,10 @@
     }
 
     .column-main {
+        width: 1420px !important;
+    }
+    
+    .settings-content {
         width: 1420px !important;
     }
     
