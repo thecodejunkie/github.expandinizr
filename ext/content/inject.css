@@ -1,3 +1,4 @@
+
 .css-truncate.css-truncate-target {
     white-space: normal !important;
     word-wrap: break-word !important;
@@ -11,31 +12,35 @@
     .container {
         width: 1280px !important;
     }
-    
+
     .repository-with-sidebar .repository-content {
         width: 1220px !important;
     }
-    
+
     .repository-with-sidebar.with-full-navigation .repository-content {
         width: 1090px !important;
     }
-      
+
     .content .css-truncate.css-truncate-target {
         max-width: 500px !important;
     }
-    
+
     .org-main {
         width: 940px !important;
     }
-    
+
     .column-main {
         width: 1020px !important;
     }
     
-    .pull-request-composer .discussion-topic {
-        width: 1032px !important;	
+    .discussion-timeline-cols .main {
+        width: 920px !important;
     }
-    
+
+    .pull-request-composer .discussion-topic {
+        width: 1032px !important;
+    }
+
     .discussion-timeline {
         width: 1060px !important;
     }
@@ -53,11 +58,11 @@
     .repository-with-sidebar.with-full-navigation .repository-content {
         width: 1290px !important;
     }
-    
+
     .content .css-truncate.css-truncate-target {
         max-width: 700px !important;
     }
-    
+
     .org-main {
         width: 1140px !important;
     }
@@ -66,10 +71,14 @@
         width: 1220px !important;
     }
     
-    .pull-request-composer .discussion-topic {
-        width: 1232px !important;	
+    .discussion-timeline-cols .main {
+        width: 1120px !important;
     }
-    
+
+    .pull-request-composer .discussion-topic {
+        width: 1232px !important;
+    }
+
     .discussion-timeline {
         width: 1260px !important;
     }
@@ -91,7 +100,7 @@
     .content .css-truncate.css-truncate-target {
         max-width: 900px !important;
     }
-    
+
     .org-main {
         width: 1340px !important;
     }
@@ -100,10 +109,14 @@
         width: 1420px !important;
     }
     
-    .pull-request-composer .discussion-topic {
-        width: 1432px !important;	
+    .discussion-timeline-cols .main {
+        width: 1120px !important;
     }
-        
+
+    .pull-request-composer .discussion-topic {
+        width: 1432px !important;
+    }
+
     .discussion-timeline {
         width: 1460px !important;
     }
