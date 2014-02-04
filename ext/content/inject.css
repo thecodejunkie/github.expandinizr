@@ -19,17 +19,21 @@
     .repository-with-sidebar.with-full-navigation .repository-content {
         width: 1090px !important;
     }
-    
-    .discussion-timeline {
-        width: 1060px !important;
-    }
 	
     .content .css-truncate.css-truncate-target {
         max-width: 500px !important;
     }
-
-    .new-discussion-timeline .column.main {
+	
+    .org-main {
+        width: 940px !important;
+    }
+	
+    .column-main {
         width: 1020px !important;
+    }
+	
+    .pull-request-composer .discussion-topic {
+        width: 1032px !important;	
     }
 }
 
@@ -46,16 +50,26 @@
         width: 1290px !important;
     }
 
-    .discussion-timeline {
-        width: 1260px !important;
-    }
-
     .content .css-truncate.css-truncate-target {
         max-width: 700px !important;
     }
+	
+    .org-main {
+        width: 1140px !important;
+    }
 
-    .new-discussion-timeline .column.main {
+    .column-main {
         width: 1220px !important;
+    }
+	
+    .pull-request-composer .discussion-topic {
+        width: 1232px !important;	
+    }
+	
+    // Specific for 1600px breakpoint
+	
+    .discussion-timeline {
+        width: 1260px !important;
     }
 }
 
@@ -72,6 +86,24 @@
         width: 1490px !important;
     }
 
+    .content .css-truncate.css-truncate-target {
+        max-width: 900px !important;
+    }
+	
+    .org-main {
+        width: 1340px !important;
+    }
+
+    .column-main {
+        width: 1420px !important;
+    }
+	
+    .pull-request-composer .discussion-topic {
+        width: 1432px !important;	
+    }
+	
+    // Specific for 1800px breakpoint
+	
     .discussion-timeline {
         width: 1460px !important;
     }
@@ -82,13 +114,5 @@
 
     .timeline-comment-wrapper .timeline-comment {
         width: 1395px !important;
-    }
-
-    .content .css-truncate.css-truncate-target {
-        max-width: 900px !important;
-    }
-
-    .new-discussion-timeline .column.main {
-        width: 1420px !important;
     }
 }
