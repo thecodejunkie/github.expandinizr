@@ -20,6 +20,7 @@ Andreas Håkansson
 
 ## Changelog
 
+- v1.3.2 - Improved expanding of activity stream
 - v1.3.1 - Fixed a couple of small layout bugs
 - v1.3.0 - Changed to a responsive approach
 - v1.2.0 - Improved the un-truncting to word-wrap (thanks Frank Radocaj)

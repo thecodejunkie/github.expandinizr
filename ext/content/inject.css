@@ -7,6 +7,10 @@
     max-width: 400px !important;
 }
 
+.news .message {
+    max-width: inherit !important;
+}
+
 @media (min-width: 1400px) {
     .container {
         width: 1280px !important;
@@ -30,6 +34,10 @@
     
     .news {
         width: 920px !important;
+    }
+
+    .news .css-truncate.css-truncate-target {
+        max-width: 870px !important;
     }
 
     .column-main {
@@ -78,6 +86,10 @@
         width: 1120px !important;
     }
 
+    .news .css-truncate.css-truncate-target {
+        max-width: 1070px !important;
+    }
+
     .column-main {
         width: 1220px !important;
     }
@@ -122,6 +134,10 @@
     
     .news {
         width: 1320px !important;
+    }
+
+    .news .css-truncate.css-truncate-target {
+        max-width: 1270px !important;
     }
 
     .column-main {
