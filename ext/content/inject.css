@@ -11,6 +11,10 @@
     max-width: inherit !important;
 }
 
+.repository-with-sidebar .repository-sidebar {
+    transition: none !important;
+}
+
 @media (min-width: 1400px) {
     .container {
         width: 1280px !important;

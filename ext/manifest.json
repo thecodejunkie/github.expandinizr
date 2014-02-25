@@ -19,6 +19,9 @@
       ],
       "css": [
         "content/inject.css"
+      ],
+      "js": [
+        "content/menu-fix.js"
       ]
     }
   ]
