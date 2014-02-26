@@ -20,6 +20,7 @@ Andreas Håkansson
 
 ## Changelog
 
+- v1.4.0 - Expands side-bar for 1400, 1600 and 1800 break points
 - v1.3.2 - Improved expanding of activity stream
 - v1.3.1 - Fixed a couple of small layout bugs
 - v1.3.0 - Changed to a responsive approach
