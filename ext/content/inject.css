@@ -1,3 +1,9 @@
+.css-truncate-button a {
+   color:gray; 
+   margin-right: 5px;
+   text-decoration: none !important;
+}
+
 .css-truncate.css-truncate-target {
     white-space: normal !important;
     word-wrap: break-word !important;
