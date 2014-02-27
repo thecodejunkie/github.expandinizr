@@ -1,6 +1,6 @@
 {
   "name": "GitHub.Expandinizr",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "manifest_version": 2,
   "description": "Chrome extension that improves the GitHub experience",
   "homepage_url": "http://github.com/thecodejunkie/github.expandinizr",
@@ -19,7 +19,12 @@
       ],
       "css": [
         "content/inject.css"
-      ]
+      ],
+      "js": [
+        "content/jquery-2.1.0.min.js",
+        "content/inject.js"
+      ],
+      "run_at": "document_end"
     }
   ]
 }

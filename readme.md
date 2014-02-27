@@ -16,12 +16,14 @@ Andreas Håkansson
 
 ## Contributors
 
- - [Phillip Haydon](https://github.com/phillip-haydon)
+ - [Bjarki Heiðar Ingason](https://github.com/bjarki)
  - [Frank Radocaj](https://github.com/frankradocaj)
  - [Kristian Hellang](https://github.com/khellang)
-
+ - [Phillip Haydon](https://github.com/phillip-haydon)
+ 
 ## Changelog
 
+- v1.5.0 - Added possibility to collaps code previews
 - v1.4.0 - Expands side-bar for 1400, 1600 and 1800 break points
 - v1.3.2 - Improved expanding of activity stream
 - v1.3.1 - Fixed a couple of small layout bugs
