@@ -17,39 +17,17 @@
     max-width: inherit !important;
 }
 
-.repository-with-sidebar .repository-sidebar {
-    transition: none !important;
-}
-
-.js-new-issue-form div.three-fourths {
-    width: 100% !important;
-}
-
-@media (min-width: 100px) {
-    .pull-request-composer .discussion-topic {
-        width: 608px !important;
-    }
-}
-
 @media (min-width: 1400px) {
     .container {
         width: 1280px !important;
     }
 
     .repository-with-sidebar .repository-content {
-        width: 1090px !important;
+        width: 1220px !important;
     }
 
     .repository-with-sidebar.with-full-navigation .repository-content {
         width: 1090px !important;
-    }
-
-    .repository-with-sidebar .repository-sidebar {
-        width: 170px !important;
-    }
-
-    .repository-with-sidebar .repository-sidebar .full-word {
-        display: inline !important;
     }
 
     .content .css-truncate.css-truncate-target {
@@ -81,7 +59,7 @@
     }
 
     .pull-request-composer .discussion-topic {
-        width: 908px !important;
+        width: 1032px !important;
     }
 
     .discussion-timeline {
@@ -95,19 +73,11 @@
     }
 
     .repository-with-sidebar .repository-content {
-        width: 1290px  !important;
+        width: 1420px  !important;
     }
 
     .repository-with-sidebar.with-full-navigation .repository-content {
         width: 1290px !important;
-    }
-
-    .repository-with-sidebar .repository-sidebar {
-        width: 170px !important;
-    }
-
-    .repository-with-sidebar .repository-sidebar .full-word {
-        display: inline !important;
     }
 
     .content .css-truncate.css-truncate-target {
@@ -139,7 +109,7 @@
     }
 
     .pull-request-composer .discussion-topic {
-        width: 1110px !important;
+        width: 1232px !important;
     }
 
     .discussion-timeline {
@@ -153,19 +123,11 @@
     }
 
     .repository-with-sidebar .repository-content {
-        width: 1490px !important;
+        width: 1620px !important;
     }
 
     .repository-with-sidebar.with-full-navigation .repository-content {
         width: 1490px !important;
-    }
-
-    .repository-with-sidebar .repository-sidebar {
-        width: 170px !important;
-    }
-
-    .repository-with-sidebar .repository-sidebar .full-word {
-        display: inline !important;
     }
 
     .content .css-truncate.css-truncate-target {
@@ -197,7 +159,7 @@
     }
 
     .pull-request-composer .discussion-topic {
-        width: 1310px !important;
+        width: 1432px !important;
     }
 
     .discussion-timeline {
