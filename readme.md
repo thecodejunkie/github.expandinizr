@@ -2,7 +2,7 @@
 
 Chrome extension that improves the GitHub experience.
 
-[![Github.ExpandinizR](https://developers.google.com/chrome/web-store/images/branding/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/cbehdjjcilgnejbpnjhobkiiggkedfib)
+[![Github.ExpandinizR](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/cbehdjjcilgnejbpnjhobkiiggkedfib)
 
 Currently enhances the following:
 
