@@ -1,5 +1,5 @@
 .css-truncate-button a {
-   color:gray; 
+   color: gray; 
    margin-right: 5px;
    text-decoration: none !important;
 }
@@ -18,159 +18,164 @@
 }
 
 @media (min-width: 1400px) {
+
     .container {
         width: 1280px !important;
     }
 
-    .repository-with-sidebar .repository-content {
-        width: 1220px !important;
+    .container .news {
+        width: 780px !important;
     }
 
-    .repository-with-sidebar.with-full-navigation .repository-content {
-        width: 1090px !important;
+    .container .dashboard-sidebar {
+        width: 500px;
     }
 
-    .content .css-truncate.css-truncate-target {
-        max-width: 500px !important;
+    .container .org-main {
+        width: 990px !important;
     }
 
-    .org-main {
-        width: 940px !important;
-    }
-    
-    .news {
-        width: 920px !important;
+    .container .org-sidebar {
     }
 
-    .news .css-truncate.css-truncate-target {
-        max-width: 870px !important;
+    .container .repository-with-sidebar.with-full-navigation .repository-content {
+        width: 1100px !important;
     }
 
-    .column-main {
-        width: 1020px !important;
-    }
-    
-    .settings-content {
-        width: 1020px !important;
-    }
-    
-    .discussion-timeline-cols .main {
-        width: 920px !important;
+    .container .repository-with-sidebar.with-full-navigation .repository-sidebar {
     }
 
-    .pull-request-composer .discussion-topic {
-        width: 1032px !important;
+    .container .repository-with-sidebar .repository-content {
+        width: 1230px !important;
     }
 
-    .discussion-timeline {
-        width: 1060px !important;
+    .container .repository-with-sidebar .repository-sidebar {
     }
+
+    .container .issues-listing .timeline-comment {
+        width: 1000px !important;
+    }
+
+    .container .timeline-comment {
+        width: 1000px !important;
+    }
+
+    .container .discussion-timeline {
+        width: 1063px !important;
+    }
+
+    .container .merge-pr {
+        width: 1063px !important;
+    }
+
 }
 
 @media (min-width: 1600px) {
+
     .container {
         width: 1480px !important;
     }
 
-    .repository-with-sidebar .repository-content {
-        width: 1420px  !important;
+    .container .news {
+        width: 980px !important;
     }
 
-    .repository-with-sidebar.with-full-navigation .repository-content {
-        width: 1290px !important;
+    .container .dashboard-sidebar {
+        padding-right: 0;
+        width: 500px;
     }
 
-    .content .css-truncate.css-truncate-target {
-        max-width: 700px !important;
+    .container .org-main {
+        width: 1190px !important;
     }
 
-    .org-main {
-        width: 1140px !important;
-    }
-    
-    .news {
-        width: 1120px !important;
+    .container .org-sidebar {
     }
 
-    .news .css-truncate.css-truncate-target {
-        max-width: 1070px !important;
+    .container .repository-with-sidebar.with-full-navigation .repository-content {
+        width: 1300px !important;
     }
 
-    .column-main {
-        width: 1220px !important;
-    }
-    
-    .settings-content {
-        width: 1220px !important;
-    }
-    
-    .discussion-timeline-cols .main {
-        width: 1120px !important;
+    .container .repository-with-sidebar.with-full-navigation .repository-sidebar {
     }
 
-    .pull-request-composer .discussion-topic {
-        width: 1232px !important;
+    .container .repository-with-sidebar .repository-content {
+        width: 1430px !important;
     }
 
-    .discussion-timeline {
-        width: 1260px !important;
+    .container .repository-with-sidebar .repository-sidebar {
+    }
+
+    .container .issues-listing .timeline-comment {
+        width: 1200px !important;
+    }
+
+    .container .timeline-comment {
+        width: 1200px !important;
+    }
+
+    .container .discussion-timeline {
+        width: 1263px !important;
+    }
+
+    .container .merge-pr {
+        width: 1263px !important;
     }
 }
 
 @media (min-width: 1800px) {
+
     .container {
         width: 1680px !important;
     }
 
-    .repository-with-sidebar .repository-content {
-        width: 1620px !important;
+    .container .news {
+        width: 1180px !important;
     }
 
-    .repository-with-sidebar.with-full-navigation .repository-content {
-        width: 1490px !important;
+    .container .dashboard-sidebar {
+        width: 500px;
     }
 
-    .content .css-truncate.css-truncate-target {
-        max-width: 900px !important;
+    .container .org-main {
+        width: 1390px !important;
     }
 
-    .org-main {
-        width: 1340px !important;
-    }
-    
-    .news {
-        width: 1320px !important;
+    .container .org-sidebar {
     }
 
-    .news .css-truncate.css-truncate-target {
-        max-width: 1270px !important;
+    .container .repository-with-sidebar.with-full-navigation .repository-content {
+        width: 1500px !important;
     }
 
-    .column-main {
-        width: 1420px !important;
-    }
-    
-    .settings-content {
-        width: 1420px !important;
-    }
-    
-    .discussion-timeline-cols .main {
-        width: 1120px !important;
+    .container .repository-with-sidebar.with-full-navigation .repository-sidebar {
     }
 
-    .pull-request-composer .discussion-topic {
-        width: 1432px !important;
+    .container .repository-with-sidebar .repository-content {
+        width: 1630px !important;
     }
 
-    .discussion-timeline {
-        width: 1460px !important;
+    .container .repository-with-sidebar .repository-sidebar {
     }
 
-    .timeline-comment {
-        width: 1356px !important;
+    .container .issues-listing .timeline-comment {
+        width: 1630px !important;
     }
 
-    .timeline-comment-wrapper .timeline-comment {
-        width: 1395px !important;
+    .container .issues-listing .timeline-comment {
+        width: 1400px !important;
     }
+
+    .container .timeline-comment {
+        width: 1400px !important;
+    }
+
+    .container .discussion-timeline {
+        width: 1463px !important;
+    }
+
+    .container .merge-pr {
+        width: 1463px !important;
+    }
+
 }
