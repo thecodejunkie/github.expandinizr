@@ -4,7 +4,7 @@
    text-decoration: none !important;
 }
 
-.css-truncate.css-truncate-target {
+.css-truncate .css-truncate-target {
     white-space: normal !important;
     word-wrap: break-word !important;
 }
@@ -37,6 +37,11 @@
 
     .container .dashboard-sidebar {
         width: 500px;
+    }
+
+    .container .repo-description {
+        max-width: 380px !important;
+        vertical-align: normal;
     }
 
     .container .org-main {
@@ -101,6 +106,10 @@
         width: 500px;
     }
 
+    .container .repo-description {
+        max-width: 450px !important;
+    }
+
     .container .org-main {
         width: 1190px !important;
     }
@@ -159,6 +168,10 @@
 
     .container .dashboard-sidebar {
         width: 500px;
+    }
+
+    .container .repo-description {
+        max-width: 530px !important;
     }
 
     .container .org-main {
