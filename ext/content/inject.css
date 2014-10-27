@@ -4,13 +4,19 @@
    text-decoration: none !important;
 }
 
-.css-truncate .css-truncate-target {
+.css-truncate.css-truncate-target {
     white-space: normal !important;
     word-wrap: break-word !important;
 }
 
 .content .css-truncate.css-truncate-target {
     max-width: 400px !important;
+}
+
+.repo-description.css-truncate-target {
+    max-width: 530px !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
 }
 
 .news .message {
@@ -39,9 +45,14 @@
         width: 500px;
     }
 
-    .container .repo-description {
+    .container .repo-and-owner {
+        max-width: 370px !important;
+    }
+
+    .container .repo-description.css-truncate-target {
         max-width: 380px !important;
-        vertical-align: normal;
+        white-space: normal !important;
+        word-wrap: break-word !important;
     }
 
     .container .org-main {
@@ -49,6 +60,10 @@
     }
 
     .container .org-sidebar {
+    }
+
+    .container .repo-list-description {
+        max-width: 950px !important;
     }
 
     .container .repository-with-sidebar.with-full-navigation .repository-content {
@@ -106,8 +121,14 @@
         width: 500px;
     }
 
-    .container .repo-description {
+    .container .repo-and-owner {
+        max-width: 370px !important;
+    }
+
+    .container .repo-description.css-truncate-target {
         max-width: 450px !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
     }
 
     .container .org-main {
@@ -115,6 +136,10 @@
     }
 
     .container .org-sidebar {
+    }
+
+    .container .repo-list-description {
+        max-width: 1050px !important;
     }
 
     .container .repository-with-sidebar.with-full-navigation .repository-content {
@@ -158,7 +183,7 @@
         width: 1180px !important;
     }
 
-    .container .news .css-truncate.css-truncate-target {
+    .container .news .css-truncate..css-truncate-target {
         max-width: 1270px !important;
     }
 
@@ -170,8 +195,14 @@
         width: 500px;
     }
 
-    .container .repo-description {
+    .container .repo-and-owner {
+        max-width: 370px !important;
+    }
+
+    .container .repo-description.css-truncate-target {
         max-width: 530px !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
     }
 
     .container .org-main {
@@ -179,6 +210,10 @@
     }
 
     .container .org-sidebar {
+    }
+
+    .container .repo-list-description {
+        max-width: 1250px !important;
     }
 
     .container .repository-with-sidebar.with-full-navigation .repository-content {
