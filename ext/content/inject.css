@@ -27,6 +27,14 @@
         width: 780px !important;
     }
 
+    .container .news .css-truncate.css-truncate-target {
+        max-width: 870px !important;
+    }
+
+    .container .content .css-truncate.css-truncate-target {
+        max-width: 500px !important;
+    }
+
     .container .dashboard-sidebar {
         width: 500px;
     }
@@ -80,6 +88,14 @@
         width: 980px !important;
     }
 
+    .container .news .css-truncate.css-truncate-target {
+        max-width: 1070px !important;
+    }
+
+    .container .content .css-truncate.css-truncate-target {
+        max-width: 700px !important;
+    }
+
     .container .dashboard-sidebar {
         padding-right: 0;
         width: 500px;
@@ -131,6 +147,14 @@
 
     .container .news {
         width: 1180px !important;
+    }
+
+    .container .news .css-truncate.css-truncate-target {
+        max-width: 1270px !important;
+    }
+
+    .container .content .css-truncate.css-truncate-target {
+        max-width: 900px !important;
     }
 
     .container .dashboard-sidebar {
