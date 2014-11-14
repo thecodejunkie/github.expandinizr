@@ -96,6 +96,10 @@
         width: 1063px !important;
     }
 
+    body.split-diff .header>.container, body.split-diff .repohead>.container, body.split-diff .site>.container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -249,5 +253,4 @@
     .container .merge-pr {
         width: 1463px !important;
     }
-
 }
