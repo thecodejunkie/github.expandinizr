@@ -1,0 +1,125 @@
+@import "includes/breakpoints";
+
+.css-truncate-button a {
+   color: gray;
+   margin-right: 5px;
+   text-decoration: none !important;
+}
+
+.css-truncate.css-truncate-target {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+
+.content .css-truncate.css-truncate-target {
+    max-width: 400px !important;
+}
+
+.repo-description.css-truncate-target {
+    max-width: 530px !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+
+.news .message {
+    max-width: inherit !important;
+}
+
+.ruleset(@breakpoint) {
+    .width(@width) {
+        width: @breakpoint - @width !important
+    }
+
+    .max-width(@width) {
+        max-width: @breakpoint - @width !important
+    }
+
+    .container {
+        .width(120px);
+
+        & .news {
+            .width(620px);
+
+            & .css-truncate.css-truncate-target {
+                .max-width(530px)
+            }
+        }
+
+        & .content .css-truncate.css-truncate-target {
+            .max-width(900px)
+        }
+
+        & .dashboard-sidebar {
+            width: 500px !important;
+        }
+
+        & .repo-and-owner {
+            .max-width(1030px);
+        }
+
+        & .repo-description.css-truncate-target {
+            .max-width(1020px);
+            white-space: normal !important;
+            word-wrap: break-word !important;
+        }
+
+        & .org-main {
+            .width(410px);
+        }
+
+        & .org-sidebar {
+            // TODO: Anything here?
+        }
+
+        & .repo-list-description {
+            .max-width(450px);
+        }
+
+        & .repository-with-sidebar {
+            &.with-full-navigation {
+                & .repository-content {
+                    .width(300px);
+                }
+
+                & .repository-sidebar {
+                    // TODO: Anything here?
+                }
+            }
+
+            & .repository-content {
+                .width(170px);
+            }
+
+            & .repository-sidebar {
+                // TODO: Anything here?
+            }
+        }
+
+        & .issues-listing .timeline-comment, & .timeline-comment {
+            .width(400px);
+        }
+
+        & .discussion-timeline, & .merge-pr {
+            .width(340px);
+        }
+    }
+}
+
+@media (min-width: @md-breakpoint) {
+    .ruleset(@md-breakpoint);
+
+    body.split-diff {
+        & .header>.container, & .repohead>.container, & .site>.container {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+}
+
+@media (min-width: @lg-breakpoint) {
+    .ruleset(@lg-breakpoint);
+}
+
+@media (min-width: @xlg-breakpoint) {
+    .ruleset(@xlg-breakpoint);
+}

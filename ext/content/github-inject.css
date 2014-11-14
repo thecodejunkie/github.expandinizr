@@ -1,252 +1,163 @@
 .css-truncate-button a {
-   color: gray;
-   margin-right: 5px;
-   text-decoration: none !important;
+  color: gray;
+  margin-right: 5px;
+  text-decoration: none !important;
 }
-
 .css-truncate.css-truncate-target {
-    white-space: normal !important;
-    word-wrap: break-word !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
 }
-
 .content .css-truncate.css-truncate-target {
-    max-width: 400px !important;
+  max-width: 400px !important;
 }
-
 .repo-description.css-truncate-target {
-    max-width: 530px !important;
+  max-width: 530px !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+}
+.news .message {
+  max-width: inherit !important;
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1280px !important;
+  }
+  .container .news {
+    width: 780px !important;
+  }
+  .container .news .css-truncate.css-truncate-target {
+    max-width: 870px !important;
+  }
+  .container .content .css-truncate.css-truncate-target {
+    max-width: 500px !important;
+  }
+  .container .dashboard-sidebar {
+    width: 500px !important;
+  }
+  .container .repo-and-owner {
+    max-width: 370px !important;
+  }
+  .container .repo-description.css-truncate-target {
+    max-width: 380px !important;
     white-space: normal !important;
     word-wrap: break-word !important;
+  }
+  .container .org-main {
+    width: 990px !important;
+  }
+  .container .repo-list-description {
+    max-width: 950px !important;
+  }
+  .container .repository-with-sidebar.with-full-navigation .repository-content {
+    width: 1100px !important;
+  }
+  .container .repository-with-sidebar .repository-content {
+    width: 1230px !important;
+  }
+  .container .issues-listing .timeline-comment,
+  .container .timeline-comment {
+    width: 1000px !important;
+  }
+  .container .discussion-timeline,
+  .container .merge-pr {
+    width: 1060px !important;
+  }
+  body.split-diff .header > .container,
+  body.split-diff .repohead > .container,
+  body.split-diff .site > .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
-
-.news .message {
-    max-width: inherit !important;
-}
-
-@media (min-width: 1400px) {
-
-    .container {
-        width: 1280px !important;
-    }
-
-    .container .news {
-        width: 780px !important;
-    }
-
-    .container .news .css-truncate.css-truncate-target {
-        max-width: 870px !important;
-    }
-
-    .container .content .css-truncate.css-truncate-target {
-        max-width: 500px !important;
-    }
-
-    .container .dashboard-sidebar {
-        width: 500px;
-    }
-
-    .container .repo-and-owner {
-        max-width: 370px !important;
-    }
-
-    .container .repo-description.css-truncate-target {
-        max-width: 380px !important;
-        white-space: normal !important;
-        word-wrap: break-word !important;
-    }
-
-    .container .org-main {
-        width: 990px !important;
-    }
-
-    .container .org-sidebar {
-    }
-
-    .container .repo-list-description {
-        max-width: 950px !important;
-    }
-
-    .container .repository-with-sidebar.with-full-navigation .repository-content {
-        width: 1100px !important;
-    }
-
-    .container .repository-with-sidebar.with-full-navigation .repository-sidebar {
-    }
-
-    .container .repository-with-sidebar .repository-content {
-        width: 1230px !important;
-    }
-
-    .container .repository-with-sidebar .repository-sidebar {
-    }
-
-    .container .issues-listing .timeline-comment {
-        width: 1000px !important;
-    }
-
-    .container .timeline-comment {
-        width: 1000px !important;
-    }
-
-    .container .discussion-timeline {
-        width: 1063px !important;
-    }
-
-    .container .merge-pr {
-        width: 1063px !important;
-    }
-
-}
-
 @media (min-width: 1600px) {
-
-    .container {
-        width: 1480px !important;
-    }
-
-    .container .news {
-        width: 980px !important;
-    }
-
-    .container .news .css-truncate.css-truncate-target {
-        max-width: 1070px !important;
-    }
-
-    .container .content .css-truncate.css-truncate-target {
-        max-width: 700px !important;
-    }
-
-    .container .dashboard-sidebar {
-        padding-right: 0;
-        width: 500px;
-    }
-
-    .container .repo-and-owner {
-        max-width: 370px !important;
-    }
-
-    .container .repo-description.css-truncate-target {
-        max-width: 450px !important;
-        white-space: normal !important;
-        word-wrap: break-word !important;
-    }
-
-    .container .org-main {
-        width: 1190px !important;
-    }
-
-    .container .org-sidebar {
-    }
-
-    .container .repo-list-description {
-        max-width: 1050px !important;
-    }
-
-    .container .repository-with-sidebar.with-full-navigation .repository-content {
-        width: 1300px !important;
-    }
-
-    .container .repository-with-sidebar.with-full-navigation .repository-sidebar {
-    }
-
-    .container .repository-with-sidebar .repository-content {
-        width: 1430px !important;
-    }
-
-    .container .repository-with-sidebar .repository-sidebar {
-    }
-
-    .container .issues-listing .timeline-comment {
-        width: 1200px !important;
-    }
-
-    .container .timeline-comment {
-        width: 1200px !important;
-    }
-
-    .container .discussion-timeline {
-        width: 1263px !important;
-    }
-
-    .container .merge-pr {
-        width: 1263px !important;
-    }
+  .container {
+    width: 1480px !important;
+  }
+  .container .news {
+    width: 980px !important;
+  }
+  .container .news .css-truncate.css-truncate-target {
+    max-width: 1070px !important;
+  }
+  .container .content .css-truncate.css-truncate-target {
+    max-width: 700px !important;
+  }
+  .container .dashboard-sidebar {
+    width: 500px !important;
+  }
+  .container .repo-and-owner {
+    max-width: 570px !important;
+  }
+  .container .repo-description.css-truncate-target {
+    max-width: 580px !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+  }
+  .container .org-main {
+    width: 1190px !important;
+  }
+  .container .repo-list-description {
+    max-width: 1150px !important;
+  }
+  .container .repository-with-sidebar.with-full-navigation .repository-content {
+    width: 1300px !important;
+  }
+  .container .repository-with-sidebar .repository-content {
+    width: 1430px !important;
+  }
+  .container .issues-listing .timeline-comment,
+  .container .timeline-comment {
+    width: 1200px !important;
+  }
+  .container .discussion-timeline,
+  .container .merge-pr {
+    width: 1260px !important;
+  }
 }
-
 @media (min-width: 1800px) {
-
-    .container {
-        width: 1680px !important;
-    }
-
-    .container .news {
-        width: 1180px !important;
-    }
-
-    .container .news .css-truncate..css-truncate-target {
-        max-width: 1270px !important;
-    }
-
-    .container .content .css-truncate.css-truncate-target {
-        max-width: 900px !important;
-    }
-
-    .container .dashboard-sidebar {
-        width: 500px;
-    }
-
-    .container .repo-and-owner {
-        max-width: 370px !important;
-    }
-
-    .container .repo-description.css-truncate-target {
-        max-width: 530px !important;
-        white-space: normal !important;
-        word-wrap: break-word !important;
-    }
-
-    .container .org-main {
-        width: 1390px !important;
-    }
-
-    .container .org-sidebar {
-    }
-
-    .container .repo-list-description {
-        max-width: 1250px !important;
-    }
-
-    .container .repository-with-sidebar.with-full-navigation .repository-content {
-        width: 1500px !important;
-    }
-
-    .container .repository-with-sidebar.with-full-navigation .repository-sidebar {
-    }
-
-    .container .repository-with-sidebar .repository-content {
-        width: 1630px !important;
-    }
-
-    .container .repository-with-sidebar .repository-sidebar {
-    }
-
-    .container .issues-listing .timeline-comment {
-        width: 1630px !important;
-    }
-
-    .container .issues-listing .timeline-comment {
-        width: 1400px !important;
-    }
-
-    .container .timeline-comment {
-        width: 1400px !important;
-    }
-
-    .container .discussion-timeline {
-        width: 1463px !important;
-    }
-
-    .container .merge-pr {
-        width: 1463px !important;
-    }
+  .container {
+    width: 1680px !important;
+  }
+  .container .news {
+    width: 1180px !important;
+  }
+  .container .news .css-truncate.css-truncate-target {
+    max-width: 1270px !important;
+  }
+  .container .content .css-truncate.css-truncate-target {
+    max-width: 900px !important;
+  }
+  .container .dashboard-sidebar {
+    width: 500px !important;
+  }
+  .container .repo-and-owner {
+    max-width: 770px !important;
+  }
+  .container .repo-description.css-truncate-target {
+    max-width: 780px !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+  }
+  .container .org-main {
+    width: 1390px !important;
+  }
+  .container .repo-list-description {
+    max-width: 1350px !important;
+  }
+  .container .repository-with-sidebar.with-full-navigation .repository-content {
+    width: 1500px !important;
+  }
+  .container .repository-with-sidebar .repository-content {
+    width: 1630px !important;
+  }
+  .container .issues-listing .timeline-comment,
+  .container .timeline-comment {
+    width: 1400px !important;
+  }
+  .container .discussion-timeline,
+  .container .merge-pr {
+    width: 1460px !important;
+  }
 }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdpdGh1Yi1pbmplY3QubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFQSxvQkFBcUI7RUFDbEIsV0FBQTtFQUNBLGlCQUFBO0VBQ0EsZ0NBQUE7O0FBR0gsYUFBYTtFQUNULDhCQUFBO0VBQ0EscUJBQUE7O0FBR0osUUFBUyxjQUFhO0VBQ2xCLDJCQUFBOztBQUdKLGlCQUFpQjtFQUNiLDJCQUFBO0VBQ0EsOEJBQUE7RUFDQSxxQkFBQTs7QUFHSixLQUFNO0VBQ0YsNkJBQUE7O0FBOEZKLFFBWG1DO0VBdkUvQjtJQVBJLGFBQUE7O0VBVUEsVUFBRTtJQVZGLFlBQUE7O0VBYUksVUFIRixNQUdJLGNBQWE7SUFUbkIsZ0JBQUE7O0VBY0EsVUFBRSxTQUFTLGNBQWE7SUFkeEIsZ0JBQUE7O0VBa0JBLFVBQUU7SUFDRSx1QkFBQTs7RUFHSixVQUFFO0lBdEJGLGdCQUFBOztFQTBCQSxVQUFFLGtCQUFpQjtJQTFCbkIsZ0JBQUE7SUE0QkksOEJBQUE7SUFDQSxxQkFBQTs7RUFHSixVQUFFO0lBcENGLFlBQUE7O0VBNENBLFVBQUU7SUF4Q0YsZ0JBQUE7O0VBOENRLFVBRk4seUJBQ0cscUJBQ0s7SUFsRFYsYUFBQTs7RUEyREksVUFYRix5QkFXSTtJQTNETixhQUFBOztFQW9FQSxVQUFFLGdCQUFnQjtFQUFtQixVQUFFO0lBcEV2QyxhQUFBOztFQXdFQSxVQUFFO0VBQXNCLFVBQUU7SUF4RTFCLGFBQUE7O0VBa0ZBLElBREEsV0FDRSxRQUFPO0VBQWEsSUFEdEIsV0FDd0IsVUFBUztFQUFhLElBRDlDLFdBQ2dELE1BQUs7SUFDakQsMEJBQUE7SUFDQSwyQkFBQTs7O0FBU1osUUFKbUM7RUFsRi9CO0lBUEksYUFBQTs7RUFVQSxVQUFFO0lBVkYsWUFBQTs7RUFhSSxVQUhGLE1BR0ksY0FBYTtJQVRuQixpQkFBQTs7RUFjQSxVQUFFLFNBQVMsY0FBYTtJQWR4QixnQkFBQTs7RUFrQkEsVUFBRTtJQUNFLHVCQUFBOztFQUdKLFVBQUU7SUF0QkYsZ0JBQUE7O0VBMEJBLFVBQUUsa0JBQWlCO0lBMUJuQixnQkFBQTtJQTRCSSw4QkFBQTtJQUNBLHFCQUFBOztFQUdKLFVBQUU7SUFwQ0YsYUFBQTs7RUE0Q0EsVUFBRTtJQXhDRixpQkFBQTs7RUE4Q1EsVUFGTix5QkFDRyxxQkFDSztJQWxEVixhQUFBOztFQTJESSxVQVhGLHlCQVdJO0lBM0ROLGFBQUE7O0VBb0VBLFVBQUUsZ0JBQWdCO0VBQW1CLFVBQUU7SUFwRXZDLGFBQUE7O0VBd0VBLFVBQUU7RUFBc0IsVUFBRTtJQXhFMUIsYUFBQTs7O0FBZ0dSLFFBSG9DO0VBdEZoQztJQVBJLGFBQUE7O0VBVUEsVUFBRTtJQVZGLGFBQUE7O0VBYUksVUFIRixNQUdJLGNBQWE7SUFUbkIsaUJBQUE7O0VBY0EsVUFBRSxTQUFTLGNBQWE7SUFkeEIsZ0JBQUE7O0VBa0JBLFVBQUU7SUFDRSx1QkFBQTs7RUFHSixVQUFFO0lBdEJGLGdCQUFBOztFQTBCQSxVQUFFLGtCQUFpQjtJQTFCbkIsZ0JBQUE7SUE0QkksOEJBQUE7SUFDQSxxQkFBQTs7RUFHSixVQUFFO0lBcENGLGFBQUE7O0VBNENBLFVBQUU7SUF4Q0YsaUJBQUE7O0VBOENRLFVBRk4seUJBQ0cscUJBQ0s7SUFsRFYsYUFBQTs7RUEyREksVUFYRix5QkFXSTtJQTNETixhQUFBOztFQW9FQSxVQUFFLGdCQUFnQjtFQUFtQixVQUFFO0lBcEV2QyxhQUFBOztFQXdFQSxVQUFFO0VBQXNCLFVBQUU7SUF4RTFCLGFBQUEiLCJmaWxlIjoiZ2l0aHViLWluamVjdC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IFwiaW5jbHVkZXMvYnJlYWtwb2ludHNcIjtcclxuXHJcbi5jc3MtdHJ1bmNhdGUtYnV0dG9uIGEge1xyXG4gICBjb2xvcjogZ3JheTtcclxuICAgbWFyZ2luLXJpZ2h0OiA1cHg7XHJcbiAgIHRleHQtZGVjb3JhdGlvbjogbm9uZSAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4uY3NzLXRydW5jYXRlLmNzcy10cnVuY2F0ZS10YXJnZXQge1xyXG4gICAgd2hpdGUtc3BhY2U6IG5vcm1hbCAhaW1wb3J0YW50O1xyXG4gICAgd29yZC13cmFwOiBicmVhay13b3JkICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbi5jb250ZW50IC5jc3MtdHJ1bmNhdGUuY3NzLXRydW5jYXRlLXRhcmdldCB7XHJcbiAgICBtYXgtd2lkdGg6IDQwMHB4ICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbi5yZXBvLWRlc2NyaXB0aW9uLmNzcy10cnVuY2F0ZS10YXJnZXQge1xyXG4gICAgbWF4LXdpZHRoOiA1MzBweCAhaW1wb3J0YW50O1xyXG4gICAgd2hpdGUtc3BhY2U6IG5vcm1hbCAhaW1wb3J0YW50O1xyXG4gICAgd29yZC13cmFwOiBicmVhay13b3JkICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbi5uZXdzIC5tZXNzYWdlIHtcclxuICAgIG1heC13aWR0aDogaW5oZXJpdCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4ucnVsZXNldChAYnJlYWtwb2ludCkge1xyXG4gICAgLndpZHRoKEB3aWR0aCkge1xyXG4gICAgICAgIHdpZHRoOiBAYnJlYWtwb2ludCAtIEB3aWR0aCAhaW1wb3J0YW50XHJcbiAgICB9XHJcblxyXG4gICAgLm1heC13aWR0aChAd2lkdGgpIHtcclxuICAgICAgICBtYXgtd2lkdGg6IEBicmVha3BvaW50IC0gQHdpZHRoICFpbXBvcnRhbnRcclxuICAgIH1cclxuXHJcbiAgICAuY29udGFpbmVyIHtcclxuICAgICAgICAud2lkdGgoMTIwcHgpO1xyXG5cclxuICAgICAgICAmIC5uZXdzIHtcclxuICAgICAgICAgICAgLndpZHRoKDYyMHB4KTtcclxuXHJcbiAgICAgICAgICAgICYgLmNzcy10cnVuY2F0ZS5jc3MtdHJ1bmNhdGUtdGFyZ2V0IHtcclxuICAgICAgICAgICAgICAgIC5tYXgtd2lkdGgoNTMwcHgpXHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9XHJcblxyXG4gICAgICAgICYgLmNvbnRlbnQgLmNzcy10cnVuY2F0ZS5jc3MtdHJ1bmNhdGUtdGFyZ2V0IHtcclxuICAgICAgICAgICAgLm1heC13aWR0aCg5MDBweClcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgICYgLmRhc2hib2FyZC1zaWRlYmFyIHtcclxuICAgICAgICAgICAgd2lkdGg6IDUwMHB4ICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICAmIC5yZXBvLWFuZC1vd25lciB7XHJcbiAgICAgICAgICAgIC5tYXgtd2lkdGgoMTAzMHB4KTtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgICYgLnJlcG8tZGVzY3JpcHRpb24uY3NzLXRydW5jYXRlLXRhcmdldCB7XHJcbiAgICAgICAgICAgIC5tYXgtd2lkdGgoMTAyMHB4KTtcclxuICAgICAgICAgICAgd2hpdGUtc3BhY2U6IG5vcm1hbCAhaW1wb3J0YW50O1xyXG4gICAgICAgICAgICB3b3JkLXdyYXA6IGJyZWFrLXdvcmQgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgICYgLm9yZy1tYWluIHtcclxuICAgICAgICAgICAgLndpZHRoKDQxMHB4KTtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgICYgLm9yZy1zaWRlYmFyIHtcclxuICAgICAgICAgICAgLy8gVE9ETzogQW55dGhpbmcgaGVyZT9cclxuICAgICAgICB9XHJcblxyXG4gICAgICAgICYgLnJlcG8tbGlzdC1kZXNjcmlwdGlvbiB7XHJcbiAgICAgICAgICAgIC5tYXgtd2lkdGgoNDUwcHgpO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgJiAucmVwb3NpdG9yeS13aXRoLXNpZGViYXIge1xyXG4gICAgICAgICAgICAmLndpdGgtZnVsbC1uYXZpZ2F0aW9uIHtcclxuICAgICAgICAgICAgICAgICYgLnJlcG9zaXRvcnktY29udGVudCB7XHJcbiAgICAgICAgICAgICAgICAgICAgLndpZHRoKDMwMHB4KTtcclxuICAgICAgICAgICAgICAgIH1cclxuXHJcbiAgICAgICAgICAgICAgICAmIC5yZXBvc2l0b3J5LXNpZGViYXIge1xyXG4gICAgICAgICAgICAgICAgICAgIC8vIFRPRE86IEFueXRoaW5nIGhlcmU/XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgIH1cclxuXHJcbiAgICAgICAgICAgICYgLnJlcG9zaXRvcnktY29udGVudCB7XHJcbiAgICAgICAgICAgICAgICAud2lkdGgoMTcwcHgpO1xyXG4gICAgICAgICAgICB9XHJcblxyXG4gICAgICAgICAgICAmIC5yZXBvc2l0b3J5LXNpZGViYXIge1xyXG4gICAgICAgICAgICAgICAgLy8gVE9ETzogQW55dGhpbmcgaGVyZT9cclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgJiAuaXNzdWVzLWxpc3RpbmcgLnRpbWVsaW5lLWNvbW1lbnQsICYgLnRpbWVsaW5lLWNvbW1lbnQge1xyXG4gICAgICAgICAgICAud2lkdGgoNDAwcHgpO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgJiAuZGlzY3Vzc2lvbi10aW1lbGluZSwgJiAubWVyZ2UtcHIge1xyXG4gICAgICAgICAgICAud2lkdGgoMzQwcHgpO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhIChtaW4td2lkdGg6IEBtZC1icmVha3BvaW50KSB7XHJcbiAgICAucnVsZXNldChAbWQtYnJlYWtwb2ludCk7XHJcblxyXG4gICAgYm9keS5zcGxpdC1kaWZmIHtcclxuICAgICAgICAmIC5oZWFkZXI+LmNvbnRhaW5lciwgJiAucmVwb2hlYWQ+LmNvbnRhaW5lciwgJiAuc2l0ZT4uY29udGFpbmVyIHtcclxuICAgICAgICAgICAgcGFkZGluZy1sZWZ0OiAwICFpbXBvcnRhbnQ7XHJcbiAgICAgICAgICAgIHBhZGRpbmctcmlnaHQ6IDAgIWltcG9ydGFudDtcclxuICAgICAgICB9XHJcbiAgICB9XHJcbn1cclxuXHJcbkBtZWRpYSAobWluLXdpZHRoOiBAbGctYnJlYWtwb2ludCkge1xyXG4gICAgLnJ1bGVzZXQoQGxnLWJyZWFrcG9pbnQpO1xyXG59XHJcblxyXG5AbWVkaWEgKG1pbi13aWR0aDogQHhsZy1icmVha3BvaW50KSB7XHJcbiAgICAucnVsZXNldChAeGxnLWJyZWFrcG9pbnQpO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */
