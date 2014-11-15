@@ -1,0 +1,252 @@
+.css-truncate-button a {
+   color: gray;
+   margin-right: 5px;
+   text-decoration: none !important;
+}
+
+.css-truncate.css-truncate-target {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+
+.content .css-truncate.css-truncate-target {
+    max-width: 400px !important;
+}
+
+.repo-description.css-truncate-target {
+    max-width: 530px !important;
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+
+.news .message {
+    max-width: inherit !important;
+}
+
+@media (min-width: 1400px) {
+
+    .container {
+        width: 1280px !important;
+    }
+
+    .container .news {
+        width: 780px !important;
+    }
+
+    .container .news .css-truncate.css-truncate-target {
+        max-width: 870px !important;
+    }
+
+    .container .content .css-truncate.css-truncate-target {
+        max-width: 500px !important;
+    }
+
+    .container .dashboard-sidebar {
+        width: 500px;
+    }
+
+    .container .repo-and-owner {
+        max-width: 370px !important;
+    }
+
+    .container .repo-description.css-truncate-target {
+        max-width: 380px !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+    }
+
+    .container .org-main {
+        width: 990px !important;
+    }
+
+    .container .org-sidebar {
+    }
+
+    .container .repo-list-description {
+        max-width: 950px !important;
+    }
+
+    .container .repository-with-sidebar.with-full-navigation .repository-content {
+        width: 1100px !important;
+    }
+
+    .container .repository-with-sidebar.with-full-navigation .repository-sidebar {
+    }
+
+    .container .repository-with-sidebar .repository-content {
+        width: 1230px !important;
+    }
+
+    .container .repository-with-sidebar .repository-sidebar {
+    }
+
+    .container .issues-listing .timeline-comment {
+        width: 1000px !important;
+    }
+
+    .container .timeline-comment {
+        width: 1000px !important;
+    }
+
+    .container .discussion-timeline {
+        width: 1063px !important;
+    }
+
+    .container .merge-pr {
+        width: 1063px !important;
+    }
+
+}
+
+@media (min-width: 1600px) {
+
+    .container {
+        width: 1480px !important;
+    }
+
+    .container .news {
+        width: 980px !important;
+    }
+
+    .container .news .css-truncate.css-truncate-target {
+        max-width: 1070px !important;
+    }
+
+    .container .content .css-truncate.css-truncate-target {
+        max-width: 700px !important;
+    }
+
+    .container .dashboard-sidebar {
+        padding-right: 0;
+        width: 500px;
+    }
+
+    .container .repo-and-owner {
+        max-width: 370px !important;
+    }
+
+    .container .repo-description.css-truncate-target {
+        max-width: 450px !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+    }
+
+    .container .org-main {
+        width: 1190px !important;
+    }
+
+    .container .org-sidebar {
+    }
+
+    .container .repo-list-description {
+        max-width: 1050px !important;
+    }
+
+    .container .repository-with-sidebar.with-full-navigation .repository-content {
+        width: 1300px !important;
+    }
+
+    .container .repository-with-sidebar.with-full-navigation .repository-sidebar {
+    }
+
+    .container .repository-with-sidebar .repository-content {
+        width: 1430px !important;
+    }
+
+    .container .repository-with-sidebar .repository-sidebar {
+    }
+
+    .container .issues-listing .timeline-comment {
+        width: 1200px !important;
+    }
+
+    .container .timeline-comment {
+        width: 1200px !important;
+    }
+
+    .container .discussion-timeline {
+        width: 1263px !important;
+    }
+
+    .container .merge-pr {
+        width: 1263px !important;
+    }
+}
+
+@media (min-width: 1800px) {
+
+    .container {
+        width: 1680px !important;
+    }
+
+    .container .news {
+        width: 1180px !important;
+    }
+
+    .container .news .css-truncate..css-truncate-target {
+        max-width: 1270px !important;
+    }
+
+    .container .content .css-truncate.css-truncate-target {
+        max-width: 900px !important;
+    }
+
+    .container .dashboard-sidebar {
+        width: 500px;
+    }
+
+    .container .repo-and-owner {
+        max-width: 370px !important;
+    }
+
+    .container .repo-description.css-truncate-target {
+        max-width: 530px !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+    }
+
+    .container .org-main {
+        width: 1390px !important;
+    }
+
+    .container .org-sidebar {
+    }
+
+    .container .repo-list-description {
+        max-width: 1250px !important;
+    }
+
+    .container .repository-with-sidebar.with-full-navigation .repository-content {
+        width: 1500px !important;
+    }
+
+    .container .repository-with-sidebar.with-full-navigation .repository-sidebar {
+    }
+
+    .container .repository-with-sidebar .repository-content {
+        width: 1630px !important;
+    }
+
+    .container .repository-with-sidebar .repository-sidebar {
+    }
+
+    .container .issues-listing .timeline-comment {
+        width: 1630px !important;
+    }
+
+    .container .issues-listing .timeline-comment {
+        width: 1400px !important;
+    }
+
+    .container .timeline-comment {
+        width: 1400px !important;
+    }
+
+    .container .discussion-timeline {
+        width: 1463px !important;
+    }
+
+    .container .merge-pr {
+        width: 1463px !important;
+    }
+}

@@ -18,11 +18,20 @@
         "https://github.com/*"
       ],
       "css": [
-        "content/inject.css"
+        "content/github-inject.css"
       ],
       "js": [
         "content/jquery-2.1.0.min.js",
-        "content/inject.js"
+        "content/github-inject.js"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "https://gist.github.com/*"
+      ],
+      "css": [
+        "content/gist-inject.css"
       ],
       "run_at": "document_end"
     }
