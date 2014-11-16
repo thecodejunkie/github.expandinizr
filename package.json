@@ -1,5 +1,5 @@
 {
-  "name": "github.expandinizr",
+  "name": "GitHub.Expandinizr",
   "version": "1.6.0",
   "description": "Chrome extension that improves the GitHub experience",
   "repository": {
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/thecodejunkie/github.expandinizr/issues"
   },
-  "homepage": "https://github.com/thecodejunkie/github.expandinizr"
+  "homepage": "https://github.com/thecodejunkie/github.expandinizr",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-less": "^1.3.6",
+    "gulp-sourcemaps": "^1.2.8"
+  }
 }
