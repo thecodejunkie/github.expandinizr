@@ -1,0 +1,27 @@
+@import "includes/breakpoints";
+
+.ruleset(@breakpoint) {
+    .width(@width) {
+        width: @breakpoint - @width !important
+    }
+
+    .container {
+        .width(120px);
+
+        & .gist-content {
+            .width(320px);
+        }
+    }
+}
+
+@media (min-width: @md-breakpoint) {
+    .ruleset(@md-breakpoint);
+}
+
+@media (min-width: @lg-breakpoint) {
+    .ruleset(@lg-breakpoint);
+}
+
+@media (min-width: @xlg-breakpoint) {
+    .ruleset(@xlg-breakpoint);
+}
