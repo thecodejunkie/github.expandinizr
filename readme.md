@@ -25,7 +25,11 @@ Andreas Håkansson
  
 ## Changelog
 
-- v1.6.1 - Removed truncation in notifications, fixed commit comment width - @khellang
+- v1.7.0
+	- Removed truncation in notifications - @khellang
+	- Fixed commit comment width - @khellang
+	- Fixed collapse code file button - @khellang
+	- Added shrink/expand button for comment form - @khellang
 - v1.6.0 - Complete rewrite, added build with gulp - @khellang
 - v1.5.1 - Removed side-bar expansion, it broke too much stuff
 - v1.5.0 - Added possibility to collapse code previews
