@@ -6,6 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var jeditor = require("gulp-json-editor");
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var minifyCSS = require('gulp-minify-css');
 
 var package = require('./package.json');
 
@@ -17,7 +18,9 @@ gulp.task('default', function() {
   gulp.src('./src/*.less')
     .pipe(sourcemaps.init())
     .pipe(less())
+    .pipe(minifyCSS())
     .pipe(sourcemaps.write())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./ext/content'));
 
   gulp.src('./src/*.js')
