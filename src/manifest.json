@@ -22,7 +22,7 @@
       ],
       "js": [
         "content/jquery-2.1.0.min.js",
-        "content/github-inject.js"
+        "content/github-inject.min.js"
       ],
       "run_at": "document_end"
     },

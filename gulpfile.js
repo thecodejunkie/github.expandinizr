@@ -4,6 +4,8 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var jeditor = require("gulp-json-editor");
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
 
 var package = require('./package.json');
 
@@ -13,6 +15,13 @@ gulp.task('default', function () {
     .pipe(less())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./ext/content'));
+
+  gulp.src('./src/*.js')
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(sourcemaps.write())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./ext/content'))
 
   gulp.src("./src/manifest.json")
     .pipe(jeditor({
