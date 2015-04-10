@@ -9,7 +9,11 @@ var rename = require('gulp-rename');
 
 var package = require('./package.json');
 
-gulp.task('default', function () {
+gulp.task('watch', function() {
+  gulp.watch('./src/**/*', ['default'])
+});
+
+gulp.task('default', function() {
   gulp.src('./src/*.less')
     .pipe(sourcemaps.init())
     .pipe(less())
@@ -25,10 +29,10 @@ gulp.task('default', function () {
 
   gulp.src("./src/manifest.json")
     .pipe(jeditor({
-        'name': package.name,
-        'version': package.version,
-        'description': package.description,
-        'homepage_url': package.repository.url
+      'name': package.name,
+      'version': package.version,
+      'description': package.description,
+      'homepage_url': package.repository.url
     }))
     .pipe(gulp.dest("./ext"));
 });
