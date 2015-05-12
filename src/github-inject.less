@@ -25,6 +25,14 @@
     max-width: inherit !important;
 }
 
+.open > .merge-branch-manually {
+    max-width: inherit !important;
+}
+
+& .dashboard-sidebar {
+    width: 500px !important;
+}
+
 .ruleset(@breakpoint) {
     .width(@width) {
         width: @breakpoint - @width !important
@@ -55,10 +63,6 @@
             & .css-truncate-target {
                 .max-width(900px);
             }
-        }
-
-        & .dashboard-sidebar {
-            width: 500px !important;
         }
 
         & .repo-and-owner {
