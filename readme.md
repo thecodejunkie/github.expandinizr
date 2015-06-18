@@ -11,6 +11,9 @@ Currently enhances the following:
 - Removes the truncating of file and directory names in the repository browser
 - Really long file and directory names will word-wrap
 - Fully expands the website, with breakpoints at 1400px, 1600px and 1800px
+- Removes truncation in notifications
+- Adds shrink/expand button for comment form
+- Adds possibility to collapse code previews
 
 ## Authors
 
