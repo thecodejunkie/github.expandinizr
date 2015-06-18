@@ -41,12 +41,20 @@
             .width(620px);
 
             & .css-truncate.css-truncate-target {
-                .max-width(530px)
+                .max-width(530px);
             }
         }
 
         & .content .css-truncate.css-truncate-target {
-            .max-width(900px)
+            .max-width(900px);
+        }
+
+        & .notifications-list .css-truncate {
+            .max-width(900px);
+
+            & .css-truncate-target {
+                .max-width(900px);
+            }
         }
 
         & .dashboard-sidebar {
@@ -95,8 +103,12 @@
             }
         }
 
-        & .issues-listing .timeline-comment, & .timeline-comment {
+        & .timeline-comment {
             .width(400px);
+
+            &.commit-comment {
+                .width(444px);
+            }
         }
 
         & .discussion-timeline, & .merge-pr {

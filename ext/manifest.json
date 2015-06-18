@@ -1,6 +1,6 @@
 {
-  "name": "GitHub.Expandinizr",
-  "version": "1.6.0",
+  "name": "github.expandinizr",
+  "version": "1.6.1",
   "manifest_version": 2,
   "description": "Chrome extension that improves the GitHub experience",
   "homepage_url": "https://github.com/thecodejunkie/github.expandinizr",
@@ -17,11 +17,11 @@
       "https://github.com/*"
     ],
     "css": [
-      "content/github-inject.css"
+      "content/github-inject.min.css"
     ],
     "js": [
       "content/jquery-2.1.0.min.js",
-      "content/github-inject.js"
+      "content/github-inject.min.js"
     ],
     "run_at": "document_end"
   }, {
@@ -29,7 +29,7 @@
       "https://gist.github.com/*"
     ],
     "css": [
-      "content/gist-inject.css"
+      "content/gist-inject.min.css"
     ],
     "run_at": "document_end"
   }]

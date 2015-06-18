@@ -1,5 +1,7 @@
 # Github.ExpandinizR
 
+[![devDependencies](http://img.shields.io/david/dev/thecodejunkie/github.expandinizr.svg?style=flat)](https://david-dm.org/thecodejunkie/github.expandinizr#info=devDependencies)
+
 Chrome extension that improves the GitHub experience.
 
 [![Github.ExpandinizR](https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png)](https://chrome.google.com/webstore/detail/cbehdjjcilgnejbpnjhobkiiggkedfib)
@@ -23,15 +25,17 @@ Andreas Håkansson
  
 ## Changelog
 
+- v1.6.1 - Removed truncation in notifications, fixed commit comment width - @khellang
+- v1.6.0 - Complete rewrite, added build with gulp - @khellang
 - v1.5.1 - Removed side-bar expansion, it broke too much stuff
-- v1.5.0 - Added possibility to collaps code previews
+- v1.5.0 - Added possibility to collapse code previews
 - v1.4.0 - Expands side-bar for 1400, 1600 and 1800 break points
 - v1.3.2 - Improved expanding of activity stream
 - v1.3.1 - Fixed a couple of small layout bugs
-- v1.3.0 - Changed to a responsive approach
-- v1.2.0 - Improved the un-truncting to word-wrap (thanks Frank Radocaj)
+- v1.3.0 - Changed to a responsive approach - @khellang
+- v1.2.0 - Improved the un-truncting to word-wrap - @frankradocaj
 - v1.1.1 - Fix for labels on the expanded issue form
-- v1.1.0 - Expands the issue form to full width (thanks Phillip Haydon)
+- v1.1.0 - Expands the issue form to full width - @phillip-haydon
 - v1.0.0 - First release of the extension
 
 ## License
