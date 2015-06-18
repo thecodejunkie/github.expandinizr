@@ -12,9 +12,9 @@ Currently enhances the following:
 - Really long file and directory names will word-wrap
 - Fully expands the website, with breakpoints at 1400px, 1600px and 1800px
 
-## Author
+## Authors
 
-Andreas Håkansson
+Andreas Håkansson, Kristian Hellang
 
 ## Contributors
 
@@ -46,7 +46,7 @@ Andreas Håkansson
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Andreas Håkansson
+Copyright (c) 2013 Andreas Håkansson, Kristian Hellang and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
