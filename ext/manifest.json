@@ -38,5 +38,9 @@
     ],
     "run_at": "document_end"
   }],
-  "options_page": "content/options.html"
+  "options_page": "content/options.html",
+  "background": {
+    "scripts": [ "content/background.js" ],
+    "persistent": false
+  }
 }
