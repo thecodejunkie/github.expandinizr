@@ -13,6 +13,10 @@
     "https://github.com/*",
     "https://gist.github.com/*"
   ],
+  "optional_permissions": [
+    "http://*/",
+    "https://*/"
+  ],
   "content_scripts": [{
     "matches": [
       "https://github.com/*"
@@ -33,5 +37,6 @@
       "content/gist-inject.min.css"
     ],
     "run_at": "document_end"
-  }]
+  }],
+  "options_page": "content/options.html"
 }
