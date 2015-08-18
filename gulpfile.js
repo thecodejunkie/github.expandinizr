@@ -28,7 +28,10 @@ gulp.task('default', function() {
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./ext/content'))
+    .pipe(gulp.dest('./ext/content'));
+
+  gulp.src('./src/*.html')
+    .pipe(gulp.dest('./ext/content'));
 
   gulp.src("./src/manifest.json")
     .pipe(jeditor({

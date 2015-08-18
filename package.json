@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/thecodejunkie/github.expandinizr",
   "devDependencies": {
-    "gulp": "^3.8.10",
+    "gulp": "^3.9.0",
     "gulp-json-editor": "^2.2.1",
     "gulp-less": "^3.0.3",
     "gulp-minify-css": "^1.0.0",

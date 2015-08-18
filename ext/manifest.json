@@ -10,6 +10,8 @@
     "128": "icons/icon128.png"
   },
   "permissions": [
+    "tabs",
+    "storage",
     "https://github.com/*",
     "https://gist.github.com/*"
   ],
@@ -17,30 +19,15 @@
     "http://*/",
     "https://*/"
   ],
-  "content_scripts": [{
-    "matches": [
-      "https://github.com/*"
-    ],
-    "css": [
-      "content/github-inject.min.css"
-    ],
-    "js": [
-      "content/jquery-2.1.0.min.js",
-      "content/github-inject.min.js"
-    ],
-    "run_at": "document_end"
-  }, {
-    "matches": [
-      "https://gist.github.com/*"
-    ],
-    "css": [
-      "content/gist-inject.min.css"
-    ],
-    "run_at": "document_end"
-  }],
-  "options_page": "content/options.html",
+  "options_ui": {
+    "page": "content/options.html",
+    "chrome_style": true,
+    "open_in_tab": true
+  },
   "background": {
-    "scripts": [ "content/background.js" ],
+    "scripts": [
+      "content/background.min.js"
+    ],
     "persistent": false
   }
 }
