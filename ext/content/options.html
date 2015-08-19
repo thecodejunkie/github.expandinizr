@@ -13,7 +13,10 @@
     -webkit-animation: target-fade 3s 1;
     -moz-animation: target-fade 3s 1;
     }
-
+    #new_auth_url_msg {
+      margin-left: 50px;
+      color: rgb(239, 110, 110);
+    }
     @-webkit-keyframes target-fade {
       0% { background-color: rgba(256,0,0,.1); }
       100% { background-color: rgba(0,0,0,0); }
@@ -43,7 +46,8 @@
                 </dt>
                 <dd>
                   <input id="new_auth_url" name="new_auth" size="30" type="url" value="">
-                  <input id="new_auth_url_submit" class="btn btn-sm btn-primary" type="submit" value="Add" style="float: none;">
+                  <input id="new_auth_url_submit" class="btn btn-sm btn-primary" type="submit" value="Add" style="float: none;" disabled>
+                  <span id="new_auth_url_msg"></span>
                 </dd>
               </dl>
             </li>

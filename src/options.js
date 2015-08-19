@@ -109,6 +109,7 @@ function addAuthorizedSite(id, URL) {
                        $(this).removeClass("highlight");
                        $(this).dequeue();
                    });
+                $("#new_auth_url_msg").text("Duplicate URL - " + newURL);
             } else {
                 // The extension doesn't have the permissions.s
                 chrome.permissions.request({
@@ -129,12 +130,14 @@ function addAuthorizedSite(id, URL) {
                             });
                         $("#new_auth_url_item").before(newItem);
                         $("#new_auth_url").val("");
+                        $("#new_auth_url_submit").prop('disabled', true);
+                        $("#new_auth_url_msg").text("");
                     } else {
                         // permissions not granted (by user or error)
                         var lastError = chrome.runtime.lastError;
                         if (lastError) {
                             console.log(lastError.message);
-                            alert(lastError.message);
+                            $("#new_auth_url_msg").text(lastError.message);
                         }
                     }
                 });
@@ -200,6 +203,13 @@ function removeAuthorizedSite(id, URL) {
 function setupUI() {
     showAuthorizedSites();
     $("#new_auth_url_submit").click(addAuthorizedSite);
+    $("#new_auth_url").keyup( function () {
+        if($(this).val() == '' ) {
+            $("#new_auth_url_submit").prop("disabled", true);
+        } else {
+            $("#new_auth_url_submit").prop("disabled", false);
+        }
+    });
 }
 
 document.addEventListener('DOMContentLoaded', setupUI);
