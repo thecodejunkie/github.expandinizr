@@ -1,0 +1,15 @@
+{
+  "name": "github.expandinizr",
+  "homepage": "https://github.com/thecodejunkie/github.expandinizr",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-2.1.0.min": "http://code.jquery.com/jquery-2.1.0.min.js"
+  }
+}
