@@ -27,13 +27,14 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
       public_github_enabled: true
     },
     function(options) {
+      /*
       console.debug({
         tab: tab.url,
         opts: options,
         eval1: (/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled),
         eval2: (/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled),
         eval3: (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))
-      });
+      });*/
       if((/gist\.github\.com/.test(tab.url) && options.public_gist_enabled) ||
          (/github\.com/.test(tab.url) && options.public_github_enabled) ||
          (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))) {
