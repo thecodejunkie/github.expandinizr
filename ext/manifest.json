@@ -27,7 +27,6 @@
   "background": {
     "scripts": [
       "content/background.min.js"
-    ],
-    "persistent": false
+    ]
   }
 }

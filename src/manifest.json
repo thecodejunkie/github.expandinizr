@@ -25,7 +25,6 @@
     "open_in_tab": true
   },
   "background": {
-    "scripts": [ "content/background.min.js" ],
-    "persistent": false
+    "scripts": [ "content/background.min.js" ]
   }
 }
