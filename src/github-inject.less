@@ -29,10 +29,6 @@
     max-width: inherit !important;
 }
 
-& .dashboard-sidebar {
-    width: 500px !important;
-}
-
 .ruleset(@breakpoint) {
     .width(@width) {
         width: @breakpoint - @width !important
@@ -133,6 +129,10 @@
             padding-left: 0 !important;
             padding-right: 0 !important;
         }
+    }
+    
+    & .dashboard-sidebar {
+        width: 500px !important;
     }
 }
 
