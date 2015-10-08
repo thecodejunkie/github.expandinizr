@@ -31,6 +31,11 @@
     .container {
         .width(120px);
 
+        .split-diff & {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
         & .news {
             .width(700px);
 
@@ -77,12 +82,20 @@
             }
         }
 
-        & .timeline-comment {
-            .width(400px);
+        & .comment-holder {
+            max-width: none !important;
+        }
 
-            &.commit-comment {
-                .width(444px);
-            }
+        & .timeline-comment {
+            width: 100% !important;
+        }
+
+        & .timeline-new-comment .timeline-comment {
+            .width(400px);
+        }
+
+        & .discussion-timeline-actions .timeline-comment {
+            .width(404px);
 
             &.shrinked-to-default {
                 max-width: 780px !important;
@@ -97,13 +110,6 @@
 
 @media (min-width: @md-breakpoint) {
     .ruleset(@md-breakpoint);
-
-    body.split-diff {
-        & .header>.container, & .repohead>.container, & .site>.container {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-        }
-    }
 }
 
 @media (min-width: @lg-breakpoint) {
