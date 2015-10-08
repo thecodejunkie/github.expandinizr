@@ -6,21 +6,6 @@
    text-decoration: none !important;
 }
 
-.css-truncate.css-truncate-target {
-    white-space: normal !important;
-    word-wrap: break-word !important;
-}
-
-.content .css-truncate.css-truncate-target {
-    max-width: 400px !important;
-}
-
-.repo-description.css-truncate-target {
-    max-width: 530px !important;
-    white-space: normal !important;
-    word-wrap: break-word !important;
-}
-
 .news .message {
     max-width: inherit !important;
 }
@@ -38,6 +23,11 @@
         max-width: @breakpoint - @width !important
     }
 
+    .css-truncate.css-truncate-target {
+        white-space: normal !important;
+        word-wrap: break-word !important;
+    }
+
     .container {
         .width(120px);
 
@@ -47,10 +37,6 @@
             & .css-truncate.css-truncate-target {
                 .max-width(530px);
             }
-        }
-
-        & .content .css-truncate.css-truncate-target {
-            .max-width(900px);
         }
 
         & .notifications-list .css-truncate {
