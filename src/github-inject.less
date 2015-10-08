@@ -29,10 +29,6 @@
     max-width: inherit !important;
 }
 
-& .dashboard-sidebar {
-    width: 500px !important;
-}
-
 .ruleset(@breakpoint) {
     .width(@width) {
         width: @breakpoint - @width !important
@@ -46,7 +42,7 @@
         .width(120px);
 
         & .news {
-            .width(620px);
+            .width(700px);
 
             & .css-truncate.css-truncate-target {
                 .max-width(530px);
@@ -79,10 +75,6 @@
             .width(410px);
         }
 
-        & .org-sidebar {
-            // TODO: Anything here?
-        }
-
         & .repo-list-description {
             .max-width(450px);
         }
@@ -92,18 +84,10 @@
                 & .repository-content {
                     .width(300px);
                 }
-
-                & .repository-sidebar {
-                    // TODO: Anything here?
-                }
             }
 
             & .repository-content {
                 .width(170px);
-            }
-
-            & .repository-sidebar {
-                // TODO: Anything here?
             }
         }
 
