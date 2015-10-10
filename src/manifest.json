@@ -26,5 +26,29 @@
   },
   "background": {
     "scripts": [ "content/background.min.js" ]
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "css": [
+        "content/github-inject.min.css"
+      ],
+      "js": [
+        "content/index.js",
+        "content/github-inject.min.js"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "https://gist.github.com/*"
+      ],
+      "css": [
+        "content/gist-inject.min.css"
+      ],
+      "run_at": "document_end"
+    }
+  ]
 }

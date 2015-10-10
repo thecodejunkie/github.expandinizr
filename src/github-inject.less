@@ -6,21 +6,6 @@
    text-decoration: none !important;
 }
 
-.css-truncate.css-truncate-target {
-    white-space: normal !important;
-    word-wrap: break-word !important;
-}
-
-.content .css-truncate.css-truncate-target {
-    max-width: 400px !important;
-}
-
-.repo-description.css-truncate-target {
-    max-width: 530px !important;
-    white-space: normal !important;
-    word-wrap: break-word !important;
-}
-
 .news .message {
     max-width: inherit !important;
 }
@@ -29,32 +14,39 @@
     max-width: inherit !important;
 }
 
-& .dashboard-sidebar {
-    width: 500px !important;
-}
-
 .ruleset(@breakpoint) {
     .width(@width) {
         width: @breakpoint - @width !important
+    }
+
+    .capped-card {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
     }
 
     .max-width(@width) {
         max-width: @breakpoint - @width !important
     }
 
+    .css-truncate.css-truncate-target {
+        white-space: normal !important;
+        word-wrap: break-word !important;
+    }
+
     .container {
         .width(120px);
 
+        .split-diff & {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
         & .news {
-            .width(620px);
+            .width(700px);
 
             & .css-truncate.css-truncate-target {
                 .max-width(530px);
             }
-        }
-
-        & .content .css-truncate.css-truncate-target {
-            .max-width(900px);
         }
 
         & .notifications-list .css-truncate {
@@ -79,10 +71,6 @@
             .width(410px);
         }
 
-        & .org-sidebar {
-            // TODO: Anything here?
-        }
-
         & .repo-list-description {
             .max-width(450px);
         }
@@ -92,27 +80,27 @@
                 & .repository-content {
                     .width(300px);
                 }
-
-                & .repository-sidebar {
-                    // TODO: Anything here?
-                }
             }
 
             & .repository-content {
                 .width(170px);
             }
+        }
 
-            & .repository-sidebar {
-                // TODO: Anything here?
-            }
+        & .comment-holder {
+            max-width: none !important;
         }
 
         & .timeline-comment {
-            .width(400px);
+            width: 100% !important;
+        }
 
-            &.commit-comment {
-                .width(444px);
-            }
+        & .timeline-new-comment .timeline-comment {
+            .width(400px);
+        }
+
+        & .discussion-timeline-actions .timeline-comment {
+            .width(404px);
 
             &.shrinked-to-default {
                 max-width: 780px !important;
@@ -127,13 +115,6 @@
 
 @media (min-width: @md-breakpoint) {
     .ruleset(@md-breakpoint);
-
-    body.split-diff {
-        & .header>.container, & .repohead>.container, & .site>.container {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-        }
-    }
 }
 
 @media (min-width: @lg-breakpoint) {
