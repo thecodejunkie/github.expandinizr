@@ -14,7 +14,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     ]
 
     var jsFiles = [
-      'content/jquery-2.1.0.min.js',
+      'content/index.js',
       'content/github-inject.min.js'
     ]
 
@@ -34,17 +34,19 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
         eval1: (/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled),
         eval2: (/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled),
         eval3: (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))
-      });*/
-      if((/gist\.github\.com/.test(tab.url) && options.public_gist_enabled) ||
-         (/github\.com/.test(tab.url) && options.public_github_enabled) ||
+      });
+      */
+      if((/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled) ||
+         (/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled) ||
          (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))) {
-        if(/https:\/\/gist\.github\.com/.test(tab.url) || /\/gist\//.test(tab.url)) { // if we are in a gist site, inject gist css
+        if((/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled)|| /\/gist\//.test(tab.url)) { // if we are in a gist site, inject gist css
           eachTask([
             function(cb) {
               eachItem(gistcssFiles, inject('insertCSS'), cb)
             }
           ]);
-        } else { // otherwise, inject github js and css
+        } else if((/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled) ||
+                  (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))) { // otherwise, inject github js and css
           eachTask([
             function(cb) {
               eachItem(cssFiles, inject('insertCSS'), cb)
