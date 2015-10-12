@@ -28,6 +28,7 @@ Andreas Håkansson, Kristian Hellang
  
 ## Changelog
 
+- v1.2.2 - Bugfixes
 - v1.7.1 - Removed ugly `aria-label`s
 - v1.7.0
 	- Removed truncation in notifications - @khellang
