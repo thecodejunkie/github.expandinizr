@@ -25,9 +25,12 @@ Andreas Håkansson, Kristian Hellang
 - [Frank Radocaj](https://github.com/frankradocaj)
 - [Kristian Hellang](https://github.com/khellang)
 - [Phillip Haydon](https://github.com/phillip-haydon)
- 
+
 ## Changelog
 
+- v1.8.0
+  - Fixed a bug where file names were not expanded - @khellang
+  - Added support for GitHub Enterprise! :sparkles: @ccampanale
 - v1.7.1 - Removed ugly `aria-label`s
 - v1.7.0
 	- Removed truncation in notifications - @khellang
