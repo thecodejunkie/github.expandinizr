@@ -36,6 +36,9 @@ gulp.task('scripts', function() {
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./ext/content'));
+
+  gulp.src('./src/*.html')
+    .pipe(gulp.dest('./ext/content'));
 });
 
 gulp.task('images', function() {
