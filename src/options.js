@@ -18,7 +18,7 @@ function showAuthorizedSites() {
             extOptions = options;
             $.each(permissions.origins, function (key, value) {
                 if (value == "https://gist.github.com/*" || value == "https://github.com/*") {
-                    // check options and set buttong
+                    // check options and set button
                     var newItem = $("<li id=\"new_auth_url_" + key + "\">\
                             <div>\
                               <input id=\"unauth_url_submit" + key + "\" class=\"btn btn-sm btn-danger\" type=\"submit\" value=\"Disable\">\
@@ -118,7 +118,7 @@ function addAuthorizedSite(id, URL) {
                     if (granted) {
                         getAuthorizedSites();
                         var new_auth_url_id = allPermissions.origins.length;
-                        //saveOptions()
+
                         var newItem = $("<li id=\"new_auth_url_" + new_auth_url_id + "\">\
                                 <div>\
                                   <input id=\"unauth_url_submit" + new_auth_url_id + "\" class=\"btn btn-sm btn-danger\" type=\"submit\" value=\"Unauthorize\">\
@@ -147,8 +147,6 @@ function addAuthorizedSite(id, URL) {
 }
 
 function removeAuthorizedSite(id, URL) {
-    //console.debug(id);
-    //console.debug(URL);
     var r = confirm("Really remove/disable " + URL + "?");
     if (r) {
         chrome.permissions.contains({

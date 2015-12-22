@@ -27,15 +27,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
       public_github_enabled: true
     },
     function(options) {
-      /*
-      console.debug({
-        tab: tab.url,
-        opts: options,
-        eval1: (/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled),
-        eval2: (/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled),
-        eval3: (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))
-      });
-      */
       if((/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled) ||
          (/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled) ||
          (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))) {
@@ -64,7 +55,6 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
         chrome.tabs[fn](tabId, { file: file, runAt: 'document_start' }, cb)
       }
     }
-
   })
 })
 
