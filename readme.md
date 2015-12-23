@@ -21,7 +21,9 @@ Andreas Håkansson, Kristian Hellang
 
 ## Contributors
 
+- [Andreas Håkansson](http://github.com/thecodejunkie)
 - [Bjarki Heiðar Ingason](https://github.com/bjarki)
+- [Christopher Campanale](https://github.com/ccampanale)
 - [Frank Radocaj](https://github.com/frankradocaj)
 - [Kristian Hellang](https://github.com/khellang)
 - [Phillip Haydon](https://github.com/phillip-haydon)
