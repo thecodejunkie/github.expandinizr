@@ -1,7 +1,7 @@
 var path = require('path');
-
 var gulp = require('gulp');
 var less = require('gulp-less');
+var clean = require('gulp-clean');
 var sourcemaps = require('gulp-sourcemaps');
 var jeditor = require("gulp-json-editor");
 var uglify = require('gulp-uglify');
@@ -9,15 +9,24 @@ var rename = require('gulp-rename');
 var minifyCSS = require('gulp-minify-css');
 var imageminOptipng = require('imagemin-optipng');
 var mainBowerFiles = require('main-bower-files');
+var cleanHtml = require('gulp-cleanhtml');
+var stripDebug = require('gulp-strip-debug');
+var zip = require('gulp-zip');
 
-var packageJson = require('./package.json');
+var package = require('./package');
+var manifest = require('./src/manifest');
 
 gulp.task('watch', function() {
-  gulp.watch('./src/**/*', ['default']);
+  return gulp.watch('./src/**', ['default']);
 });
 
-gulp.task('styles', function() {
-  gulp.src('./src/*.less')
+gulp.task('clean', function() {
+  return gulp.src(['./ext/*', './dist/*'], { read: false })
+    .pipe(clean());
+})
+
+gulp.task('styles', ['clean'], function() {
+  return gulp.src('./src/*.less')
     .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(minifyCSS())
@@ -26,38 +35,53 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./ext/content'));
 });
 
-gulp.task('scripts', function() {
+gulp.task('html', ['clean'], function() {
+  return gulp.src('./src/*.html')
+    .pipe(cleanHtml())
+    .pipe(gulp.dest('./ext/content'));
+});
+
+gulp.task('scripts', ['clean'], function() {
   gulp.src(mainBowerFiles())
     .pipe(gulp.dest('./ext/content'));
-  
-  gulp.src('./src/*.js')
+
+  return gulp.src('./src/*.js')
     .pipe(sourcemaps.init())
+    .pipe(stripDebug())
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./ext/content'));
-
-  gulp.src('./src/*.html')
-    .pipe(gulp.dest('./ext/content'));
 });
 
-gulp.task('images', function() {
-  gulp.src('./src/icons/*.png')
+gulp.task('images', ['clean'], function() {
+  return gulp.src('./src/icons/*.png')
     .pipe(imageminOptipng({optimizationLevel: 3})())
     .pipe(gulp.dest('./ext/icons'));
 });
 
-gulp.task('manifest', function() {
+gulp.task('manifest', ['clean', 'images', 'scripts', 'html', 'styles'], function() {
   var options = {
-    'name': packageJson.name,
-    'version': packageJson.version,
-    'description': packageJson.description,
-    'homepage_url': packageJson.repository.url
+    'name': package.name,
+    'version': package.version,
+    'description': package.description,
+    'homepage_url': package.repository.url
   };
 
-  gulp.src("./src/manifest.json")
+  return gulp.src('./src/manifest.json')
     .pipe(jeditor(options))
     .pipe(gulp.dest("./ext"));
 });
 
-gulp.task('default', ['styles', 'scripts', 'images', 'manifest'])
+gulp.task('zip', ['manifest'], function() {
+  var manifest = require('./ext/manifest');
+  var fileName = manifest.name + ' v' + manifest.version + '.zip';
+
+  return gulp.src('./ext/**')
+    .pipe(zip(fileName))
+    .pipe(gulp.dest('dist'));
+})
+
+gulp.task('dist', ['default', 'zip'])
+
+gulp.task('default', ['manifest'])
