@@ -15,10 +15,9 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 
     var jsFiles = [
       'content/index.js',
-      'content/github-inject.min.js'
     ]
 
-    var gistcssFiles = [
+    var gistCssFiles = [
       'content/gist-inject.min.css'
     ]
 
@@ -33,7 +32,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
         if((/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled)|| /\/gist\//.test(tab.url)) { // if we are in a gist site, inject gist css
           eachTask([
             function(cb) {
-              eachItem(gistcssFiles, inject('insertCSS'), cb)
+              eachItem(gistCssFiles, inject('insertCSS'), cb)
             }
           ]);
         } else if((/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled) ||
