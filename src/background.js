@@ -1,3 +1,9 @@
+var defaultOptions = {
+  enabled: true,
+  public_gist_enabled: true,
+  public_github_enabled: true
+}
+
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
   if (changeInfo.status !== 'loading') return
 
@@ -21,11 +27,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
       'content/gist-inject.min.css'
     ]
 
-    chrome.storage.sync.get({
-      public_gist_enabled: true,
-      public_github_enabled: true
-    },
-    function(options) {
+    chrome.storage.sync.get(defaultOptions, function(options) {
       if((/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled) ||
          (/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled) ||
          (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))) {
@@ -44,7 +46,14 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
             function(cb) {
               eachItem(jsFiles, inject('executeScript'), cb)
             }
-          ]);
+          ], function() {
+            if (options.enabled) {
+              chrome.tabs.executeScript(tabId, {
+                code: '$(\'body\').toggleClass(\'expandinizr\')',
+                runAt: 'document_start'
+              })
+            }
+          });
         }
       }
     });
@@ -54,6 +63,29 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
         chrome.tabs[fn](tabId, { file: file, runAt: 'document_start' }, cb)
       }
     }
+  })
+})
+
+chrome.runtime.onInstalled.addListener(function() {
+  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
+    chrome.declarativeContent.onPageChanged.addRules([{
+        actions: [ new chrome.declarativeContent.ShowPageAction() ],
+        conditions: [
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl: { urlContains: 'github.com' },
+          })
+        ]
+    }])
+  })
+
+  chrome.pageAction.onClicked.addListener(function(tab) {
+    chrome.storage.sync.get(defaultOptions, function(options) {
+      chrome.storage.sync.set({ enabled: !options.enabled }, function() {
+        chrome.tabs.executeScript(tab.id, {
+          code: '$(\'body\').toggleClass(\'expandinizr\')'
+        });
+      })
+    })
   })
 })
 
