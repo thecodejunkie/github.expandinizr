@@ -1,24 +1,5 @@
 @import "includes/breakpoints";
 
-.css-truncate-button a {
-   color: gray;
-   margin-right: 5px;
-   text-decoration: none !important;
-}
-
-.news .message {
-    max-width: inherit !important;
-}
-
-.open > .merge-branch-manually {
-    max-width: inherit !important;
-}
-
-table.files td.content {
-    width: inherit !important;
-    max-width: inherit !important;
-}
-
 .ruleset(@breakpoint) {
     .width(@width) {
         width: @breakpoint - @width !important
@@ -122,14 +103,35 @@ table.files td.content {
     }
 }
 
-@media (min-width: @md-breakpoint) {
-    .ruleset(@md-breakpoint);
-}
+.expandinizr {
+  .css-truncate-button a {
+     color: gray;
+     margin-right: 5px;
+     text-decoration: none !important;
+  }
 
-@media (min-width: @lg-breakpoint) {
-    .ruleset(@lg-breakpoint);
-}
+  .news .message {
+      max-width: inherit !important;
+  }
 
-@media (min-width: @xlg-breakpoint) {
-    .ruleset(@xlg-breakpoint);
+  .open > .merge-branch-manually {
+      max-width: inherit !important;
+  }
+
+  table.files td.content {
+      width: inherit !important;
+      max-width: inherit !important;
+  }
+
+  @media (min-width: @md-breakpoint) {
+      .ruleset(@md-breakpoint);
+  }
+
+  @media (min-width: @lg-breakpoint) {
+      .ruleset(@lg-breakpoint);
+  }
+
+  @media (min-width: @xlg-breakpoint) {
+      .ruleset(@xlg-breakpoint);
+  }
 }
