@@ -6,7 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var jeditor = require("gulp-json-editor");
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var minifyCSS = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 var imageminOptipng = require('imagemin-optipng');
 var mainBowerFiles = require('main-bower-files');
 var cleanHtml = require('gulp-cleanhtml');
@@ -29,7 +29,7 @@ gulp.task('styles', ['clean'], function() {
   return gulp.src('./src/*.less')
     .pipe(sourcemaps.init())
     .pipe(less())
-    .pipe(minifyCSS())
+    .pipe(cleanCSS())
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./ext/content'));
