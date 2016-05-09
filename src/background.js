@@ -49,7 +49,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
           ], function() {
             if (options.enabled) {
               chrome.tabs.executeScript(tabId, {
-                code: '$(\'body\').toggleClass(\'expandinizr\')',
+                code: 'document.body.classList.toggle(\'expandinizr\')',
                 runAt: 'document_start'
               })
             }
@@ -82,7 +82,7 @@ chrome.runtime.onInstalled.addListener(function() {
     chrome.storage.sync.get(defaultOptions, function(options) {
       chrome.storage.sync.set({ enabled: !options.enabled }, function() {
         chrome.tabs.executeScript(tab.id, {
-          code: '$(\'body\').toggleClass(\'expandinizr\')'
+          code: 'document.body.classList.toggle(\'expandinizr\')'
         });
       })
     })
