@@ -25,7 +25,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
     ]
 
     var jsFiles = [
-      'content/index.js'
+      'content/jquery.min.js'
     ]
 
     var gistCssFiles = [

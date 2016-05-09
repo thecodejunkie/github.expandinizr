@@ -7,7 +7,6 @@ var uglify = require('gulp-uglify')
 var rename = require('gulp-rename')
 var cleanCSS = require('gulp-clean-css')
 var imageminOptipng = require('imagemin-optipng')
-var mainBowerFiles = require('main-bower-files')
 var cleanHtml = require('gulp-cleanhtml')
 var stripDebug = require('gulp-strip-debug')
 var zip = require('gulp-zip')
@@ -40,8 +39,11 @@ gulp.task('html', ['clean'], function () {
 })
 
 gulp.task('scripts', ['clean'], function () {
-  gulp.src(mainBowerFiles())
-    .pipe(gulp.dest('./ext/content'))
+  var npmAssets = [
+    './node_modules/jquery/dist/jquery.min.js'
+  ]
+
+  gulp.src(npmAssets).pipe(gulp.dest('./ext/content'))
 
   return gulp.src('./src/*.js')
     .pipe(sourcemaps.init())

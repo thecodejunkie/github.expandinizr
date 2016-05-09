@@ -29,7 +29,9 @@
     "gulp-strip-debug": "^1.1.0",
     "gulp-uglify": "^1.5.3",
     "gulp-zip": "^3.2.0",
-    "imagemin-optipng": "^4.3.0",
-    "main-bower-files": "^2.11.1"
+    "imagemin-optipng": "^4.3.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3"
   }
 }
