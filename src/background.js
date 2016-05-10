@@ -24,10 +24,6 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
       'content/github-inject.min.css'
     ]
 
-    var jsFiles = [
-      'content/jquery.min.js'
-    ]
-
     var gistCssFiles = [
       'content/gist-inject.min.css'
     ]
@@ -47,9 +43,6 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
           eachTask([
             function (cb) {
               eachItem(cssFiles, inject('insertCSS'), cb)
-            },
-            function (cb) {
-              eachItem(jsFiles, inject('executeScript'), cb)
             }
           ], function () {
             if (options.enabled) {
