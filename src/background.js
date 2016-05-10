@@ -37,7 +37,14 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
             function (cb) {
               eachItem(gistCssFiles, inject('insertCSS'), cb)
             }
-          ])
+          ], function () {
+            if (options.enabled) {
+              chrome.tabs.executeScript(tabId, {
+                code: 'document.body.classList.add(\'expandinizr\')',
+                runAt: 'document_start'
+              })
+            }
+          })
         } else if ((/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled) ||
                   (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))) { // otherwise, inject github js and css
           eachTask([
@@ -47,7 +54,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
           ], function () {
             if (options.enabled) {
               chrome.tabs.executeScript(tabId, {
-                code: 'document.body.classList.toggle(\'expandinizr\')',
+                code: 'document.body.classList.add(\'expandinizr\')',
                 runAt: 'document_start'
               })
             }
@@ -70,7 +77,7 @@ chrome.runtime.onInstalled.addListener(function () {
       actions: [ new chrome.declarativeContent.ShowPageAction() ],
       conditions: [
         new chrome.declarativeContent.PageStateMatcher({
-          pageUrl: { urlContains: 'github.com' } // TODO: Use permissions in some way.
+          pageUrl: { hostSuffix: 'github.com' } // TODO: Use permissions in some way.
         })
       ]
     }])
