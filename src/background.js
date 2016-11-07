@@ -33,32 +33,24 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
          (/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled) ||
          (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))) {
         if ((/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled) || /\/gist\//.test(tab.url)) { // if we are in a gist site, inject gist css
-          eachTask([
-            function (cb) {
-              eachItem(gistCssFiles, inject('insertCSS'), cb)
-            }
-          ], function () {
-            if (options.enabled) {
-              chrome.tabs.executeScript(tabId, {
-                code: 'document.body.classList.add(\'expandinizr\')',
-                runAt: 'document_start'
-              })
-            }
-          })
+          if (options.enabled) {
+            chrome.tabs.executeScript(tabId, {
+              code: 'document.body.classList.add(\'expandinizr\')',
+              runAt: 'document_start'
+            })
+          }
+
+          eachItem(gistCssFiles, inject('insertCSS'))
         } else if ((/https:\/\/github\.com/.test(tab.url) && options.public_github_enabled) ||
                   (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))) { // otherwise, inject github js and css
-          eachTask([
-            function (cb) {
-              eachItem(cssFiles, inject('insertCSS'), cb)
-            }
-          ], function () {
-            if (options.enabled) {
-              chrome.tabs.executeScript(tabId, {
-                code: 'document.body.classList.add(\'expandinizr\')',
-                runAt: 'document_start'
-              })
-            }
-          })
+          if (options.enabled) {
+            chrome.tabs.executeScript(tabId, {
+              code: 'document.body.classList.add(\'expandinizr\')',
+              runAt: 'document_start'
+            })
+          }
+
+          eachItem(cssFiles, inject('insertCSS'))
         }
       }
     })
