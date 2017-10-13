@@ -1,61 +1,50 @@
-<html>
-  <head>
-    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-9ba9be9e8a6c36227b1ec0bf7006f7629a027836eabcff92ccc6a5725c817ace.css" media="all" rel="stylesheet">
-    <script src="jquery.min.js"></script>
-    <script src="options.min.js"></script>
-    <style>
-    .logo {
-      margin-right: 10px;
-      border-radius: 10px;
-    }
-    #new_auth_url_msg {
-      margin: 10px;
-      color: rgb(239, 110, 110);
-      float: right;
-      max-width: 380px;
-      white-space: pre-wrap;
-      word-wrap: break-word;
-    }
-    .highlight {
-    -webkit-animation: target-fade 3s 1;
-    -moz-animation: target-fade 3s 1;
-    }
-    @-webkit-keyframes target-fade {
-      0% { background-color: rgba(256,0,0,.1); }
-      100% { background-color: rgba(0,0,0,0); }
-    }
-    @-moz-keyframes target-fade {
-      0% { background-color: rgba(256,0,0,.1); }
-      100% { background-color: rgba(0,0,0,0); }
-    }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="boxed-group">
-        <h3>
-          <span>
-            <img class="logo" src="../icons/icon48.png"></img>
-          </span>Github.ExpandinizR
-        </h3>
-        <div class="boxed-group-inner">
-          <p>Bellow is a list of authorized sites on which Github.ExpandinizR is allowed to run; add to and remove from this list as you see fit.</p>
-          <ul id="permissions" class="boxed-group-list public-keys-list ">
-            <li id="new_auth_url_item">
-              <dl class="form">
-                <dt>
-                  <label for="new_auth_url">Add URL to authorized sites:</label>
-                </dt>
-                <dd>
-                  <input id="new_auth_url" name="new_auth" size="30" type="url" value="">
-                  <input id="new_auth_url_submit" class="btn btn-sm btn-primary" type="submit" value="Add" style="float: none;" disabled>
-                  <span id="new_auth_url_msg"></span>
-                </dd>
-              </dl>
-            </li>
-          </ul>
-        </div>
-      </div>
+<!doctype html>
+<meta charset="utf-8">
+<link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-9ba9be9e8a6c36227b1ec0bf7006f7629a027836eabcff92ccc6a5725c817ace.css" media="all" rel="stylesheet">
+<link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-d7137690e30123bade38abb082ac79f36cc7a105ff92e602405f53b725465cab.css" media="all" rel="stylesheet">
+<style>
+#new_auth_url_msg {
+  margin: 10px;
+  color: rgb(239, 110, 110);
+  float: right;
+  max-width: 380px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.highlight {
+-webkit-animation: target-fade 3s 1;
+-moz-animation: target-fade 3s 1;
+}
+@-webkit-keyframes target-fade {
+  0% { background-color: rgba(256,0,0,.1); }
+  100% { background-color: rgba(0,0,0,0); }
+}
+@-moz-keyframes target-fade {
+  0% { background-color: rgba(256,0,0,.1); }
+  100% { background-color: rgba(0,0,0,0); }
+}
+</style>
+<div class="container">
+  <div class="boxed-group">
+    <h3>Github.ExpandinizR</h3>
+    <div class="boxed-group-inner">
+      <p>Bellow is a list of authorized sites on which Github.ExpandinizR is allowed to run; add to and remove from this list as you see fit.</p>
+      <ul id="permissions" class="boxed-group-list public-keys-list ">
+        <li id="new_auth_url_item">
+          <dl class="form">
+            <dt>
+              <label for="new_auth_url">Add URL to authorized sites:</label>
+            </dt>
+            <dd>
+              <input id="new_auth_url" name="new_auth" size="30" type="url" value="">
+              <input id="new_auth_url_submit" class="btn btn-sm btn-primary" type="submit" value="Add" style="float: none;" disabled>
+              <span id="new_auth_url_msg"></span>
+            </dd>
+          </dl>
+        </li>
+      </ul>
     </div>
-  </body>
-</html>
+  </div>
+</div>
+<script src="jquery.min.js"></script>
+<script src="options.min.js"></script>
