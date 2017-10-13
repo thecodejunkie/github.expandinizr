@@ -5,6 +5,14 @@
         width: @breakpoint - @width !important
     }
 
+    .max-width(@width) {
+        max-width: @breakpoint - @width !important
+    }
+
+    .container-lg {
+        .max-width(120px);
+    }
+
     .container {
         .width(120px);
 
