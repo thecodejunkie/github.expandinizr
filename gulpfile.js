@@ -6,7 +6,7 @@ var jeditor = require('gulp-json-editor')
 var uglify = require('gulp-uglify')
 var rename = require('gulp-rename')
 var cleanCSS = require('gulp-clean-css')
-var imageminOptipng = require('imagemin-optipng')
+var optipng = require('gulp-optipng');
 var cleanHtml = require('gulp-cleanhtml')
 var stripDebug = require('gulp-strip-debug')
 var zip = require('gulp-zip')
@@ -56,7 +56,7 @@ gulp.task('scripts', ['clean'], function () {
 
 gulp.task('images', ['clean'], function () {
   return gulp.src('./src/icons/*.png')
-    .pipe(imageminOptipng({optimizationLevel: 3})())
+    .pipe(optipng(['-o2']))
     .pipe(gulp.dest('./ext/icons'))
 })
 

@@ -29,7 +29,7 @@
     "gulp-strip-debug": "^1.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-zip": "^4.0.0",
-    "imagemin-optipng": "^5.2.1"
+    "gulp-optipng": "git+https://github.com/dasoft/gulp-optipng.git"
   },
   "dependencies": {
     "jquery": "^3.2.1"
