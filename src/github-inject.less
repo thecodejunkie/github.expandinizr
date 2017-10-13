@@ -99,18 +99,34 @@
 
         & .timeline-new-comment .timeline-comment {
             .width(400px);
-        }
 
-        & .discussion-timeline-actions .timeline-comment {
-            .width(404px);
-
-            &.shrinked-to-default {
-                max-width: 780px !important;
+            .octotree-show & {
+                width: 100% !important;
             }
         }
 
-        & .discussion-timeline, & .merge-pr {
+        & .discussion-timeline-actions {
+            .width(404px);
+
+            .octotree-show & {
+                width: 100% !important;
+            }
+        }
+
+        & .discussion-timeline {
             .width(340px);
+
+            .octotree-show & {
+                width: calc(~"100% - 220px") !important;
+            }
+        }
+
+        & .merge-pr {
+            .width(340px);
+            
+            .octotree-show & {
+                width: 100% !important;
+            }
         }
     }
 }
@@ -132,6 +148,10 @@
 
   .avatar {
       width: auto !important;
+  }
+
+  .timeline-new-comment {
+      max-width: inherit !important;
   }
 
   table.files td.content {
