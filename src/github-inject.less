@@ -1,27 +1,12 @@
 @import "includes/breakpoints";
 
-.css-truncate-button a {
-   color: gray;
-   margin-right: 5px;
-   text-decoration: none !important;
-}
-
-.news .message {
-    max-width: inherit !important;
-}
-
-.open > .merge-branch-manually {
-    max-width: inherit !important;
-}
-
-table.files td.content {
-    width: inherit !important;
-    max-width: inherit !important;
-}
-
 .ruleset(@breakpoint) {
     .width(@width) {
         width: @breakpoint - @width !important
+    }
+
+    .max-width(@width) {
+        max-width: @breakpoint - @width !important
     }
 
     .capped-card {
@@ -29,8 +14,8 @@ table.files td.content {
         margin-left: 10px !important;
     }
 
-    .max-width(@width) {
-        max-width: @breakpoint - @width !important
+    .pinned-repo-item {
+        .width(950px);
     }
 
     .css-truncate.css-truncate-target {
@@ -46,7 +31,15 @@ table.files td.content {
         .max-width(1120px);
     }
 
+    .container-lg {
+        .max-width(120px);
+    }
+
     .container {
+        .octotree-show & {
+            width: calc(~"100% - 20px") !important;
+        }
+
         .width(120px);
 
         .split-diff & {
@@ -106,30 +99,75 @@ table.files td.content {
 
         & .timeline-new-comment .timeline-comment {
             .width(400px);
-        }
 
-        & .discussion-timeline-actions .timeline-comment {
-            .width(404px);
-
-            &.shrinked-to-default {
-                max-width: 780px !important;
+            .octotree-show & {
+                width: 100% !important;
             }
         }
 
-        & .discussion-timeline, & .merge-pr {
+        & .discussion-timeline-actions {
+            .width(404px);
+
+            .octotree-show & {
+                width: 100% !important;
+            }
+        }
+
+        & .discussion-timeline {
             .width(340px);
+
+            .octotree-show & {
+                width: calc(~"100% - 220px") !important;
+            }
+        }
+
+        & .merge-pr {
+            .width(340px);
+            
+            .octotree-show & {
+                width: 100% !important;
+            }
         }
     }
 }
 
-@media (min-width: @md-breakpoint) {
-    .ruleset(@md-breakpoint);
-}
+.expandinizr {
+  .css-truncate-button a {
+     color: gray;
+     margin-right: 5px;
+     text-decoration: none !important;
+  }
 
-@media (min-width: @lg-breakpoint) {
-    .ruleset(@lg-breakpoint);
-}
+  .news .message {
+      max-width: inherit !important;
+  }
 
-@media (min-width: @xlg-breakpoint) {
-    .ruleset(@xlg-breakpoint);
+  .open > .merge-branch-manually {
+      max-width: inherit !important;
+  }
+
+  .avatar {
+      width: auto !important;
+  }
+
+  .timeline-new-comment {
+      max-width: inherit !important;
+  }
+
+  table.files td.content {
+      width: inherit !important;
+      max-width: inherit !important;
+  }
+
+  @media (min-width: @md-breakpoint) {
+      .ruleset(@md-breakpoint);
+  }
+
+  @media (min-width: @lg-breakpoint) {
+      .ruleset(@lg-breakpoint);
+  }
+
+  @media (min-width: @xlg-breakpoint) {
+      .ruleset(@xlg-breakpoint);
+  }
 }
