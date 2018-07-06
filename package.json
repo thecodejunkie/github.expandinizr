@@ -18,18 +18,17 @@
   },
   "homepage": "https://github.com/thecodejunkie/github.expandinizr",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.9.0",
     "gulp-cleanhtml": "^1.0.3",
     "gulp-json-editor": "^2.2.1",
     "gulp-less": "^3.3.2",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-strip-debug": "^1.1.0",
+    "gulp-strip-debug": "^3.0.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-zip": "^4.0.0",
-    "gulp-optipng": "git+https://github.com/dasoft/gulp-optipng.git"
+    "gulp-zip": "^4.0.0"
   },
   "dependencies": {
     "jquery": "^3.2.1"
