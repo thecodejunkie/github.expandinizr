@@ -1,123 +1,94 @@
 @import "includes/breakpoints";
-
 .ruleset(@breakpoint) {
     .width(@width) {
-        width: @breakpoint - @width !important
+        width: @breakpoint - @width  !important
     }
-
     .max-width(@width) {
-        max-width: @breakpoint - @width !important
+        max-width: @breakpoint - @width  !important
     }
-
     .pinned-repo-item {
         .width(950px);
     }
-
     .range-editor .fork-suggester .css-truncate-target {
         .max-width(1120px);
     }
-
     .container-lg {
         .max-width(120px);
     }
-
     .container {
         .octotree-show & {
             width: calc(~"100% - 20px") !important;
         }
-
         .width(120px);
-
         .split-diff & {
             padding-left: 0 !important;
             padding-right: 0 !important;
         }
-
         & .news .css-truncate.css-truncate-target {
             .max-width(530px);
         }
-
         & .notifications-list .css-truncate {
             .max-width(900px);
-
             & .css-truncate-target {
                 .max-width(900px);
             }
         }
-
         & .repo-and-owner {
             .max-width(1030px);
         }
-
         & .repo-description.css-truncate-target {
             .max-width(1020px);
             white-space: normal !important;
             word-wrap: break-word !important;
         }
-
         & .org-main {
             .width(410px);
         }
-
         & .repo-list-description {
             .max-width(450px);
         }
-
         & .repository-with-sidebar {
             &.with-full-navigation {
                 & .repository-content {
                     .width(300px);
                 }
             }
-
             & .repository-content {
                 .width(170px);
             }
         }
-
         & .comment-holder {
             .max-width(140px);
         }
-
         & .timeline-comment {
             width: 100% !important;
         }
-
         & .timeline-new-comment .timeline-comment {
             .full-width& {
                 .width(450px);
             }
-
             .width(400px);
-
             .octotree-show & {
                 width: 100% !important;
             }
         }
-
         & .discussion-timeline-actions {
             .width(404px);
-
             .octotree-show & {
                 width: 100% !important;
             }
         }
-
         & .discussion-timeline {
             .full-width& {
                 .width(450px);
             }
-
             .width(340px);
-
             .octotree-show & {
                 width: calc(~"100% - 220px") !important;
             }
         }
-
         & .merge-pr {
             .width(340px);
-            
             .octotree-show & {
                 width: 100% !important;
             }
@@ -126,58 +97,48 @@
 }
 
 .expandinizr {
-  .css-truncate-button a {
-     color: gray;
-     margin-right: 5px;
-     text-decoration: none !important;
-  }
-
-  .news .message {
-      max-width: inherit !important;
-  }
-
-  .open > .merge-branch-manually {
-      max-width: inherit !important;
-  }
-
-  .avatar {
-      width: auto !important;
-  }
-
-  .timeline-new-comment {
-      max-width: inherit !important;
-  }
-
-  &.split-diff, &.full-width {
-    & .new-pr-form {
-      max-width: none !important;
+    .css-truncate-button a {
+        color: gray;
+        margin-right: 5px;
+        text-decoration: none !important;
     }
-  }
-
+    .news .message {
+        max-width: inherit !important;
+    }
+    .open>.merge-branch-manually {
+        max-width: inherit !important;
+    }
+    .avatar {
+        width: auto !important;
+    }
+    .timeline-new-comment {
+        max-width: inherit !important;
+    }
+    &.split-diff,
+    &.full-width {
+        & .new-pr-form {
+            max-width: none !important;
+        }
+    }
     .capped-card {
         margin-right: 10px !important;
         margin-left: 10px !important;
     }
-
     .css-truncate.css-truncate-target {
         white-space: normal !important;
         word-wrap: break-word !important;
     }
-
-  table.files td.content {
-      width: inherit !important;
-      max-width: inherit !important;
-  }
-
-  @media (min-width: @md-breakpoint) {
-      .ruleset(@md-breakpoint);
-  }
-
-  @media (min-width: @lg-breakpoint) {
-      .ruleset(@lg-breakpoint);
-  }
-
-  @media (min-width: @xlg-breakpoint) {
-      .ruleset(@xlg-breakpoint);
-  }
+    table.files td.content {
+        width: inherit !important;
+        max-width: inherit !important;
+    }
+    @media (min-width: @md-breakpoint) {
+        .ruleset(@md-breakpoint);
+    }
+    @media (min-width: @lg-breakpoint) {
+        .ruleset(@lg-breakpoint);
+    }
+    @media (min-width: @xlg-breakpoint) {
+        .ruleset(@xlg-breakpoint);
+    }
 }
