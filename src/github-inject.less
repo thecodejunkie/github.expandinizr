@@ -9,22 +9,8 @@
         max-width: @breakpoint - @width !important
     }
 
-    .capped-card {
-        margin-right: 10px !important;
-        margin-left: 10px !important;
-    }
-
     .pinned-repo-item {
         .width(950px);
-    }
-
-    .css-truncate.css-truncate-target {
-        white-space: normal !important;
-        word-wrap: break-word !important;
-    }
-
-    .split-diff .new-pr-form {
-        max-width: none !important;
     }
 
     .range-editor .fork-suggester .css-truncate-target {
@@ -98,6 +84,10 @@
         }
 
         & .timeline-new-comment .timeline-comment {
+            .full-width& {
+                .width(450px);
+            }
+
             .width(400px);
 
             .octotree-show & {
@@ -114,6 +104,10 @@
         }
 
         & .discussion-timeline {
+            .full-width& {
+                .width(450px);
+            }
+
             .width(340px);
 
             .octotree-show & {
@@ -153,6 +147,22 @@
   .timeline-new-comment {
       max-width: inherit !important;
   }
+
+  &.split-diff, &.full-width {
+    & .new-pr-form {
+      max-width: none !important;
+    }
+  }
+
+    .capped-card {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+    }
+
+    .css-truncate.css-truncate-target {
+        white-space: normal !important;
+        word-wrap: break-word !important;
+    }
 
   table.files td.content {
       width: inherit !important;
