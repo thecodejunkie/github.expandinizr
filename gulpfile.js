@@ -6,7 +6,7 @@ var jeditor = require('gulp-json-editor')
 var uglify = require('gulp-uglify')
 var rename = require('gulp-rename')
 var cleanCSS = require('gulp-clean-css')
-var optipng = require('gulp-optipng');
+var imagemin = require('gulp-imagemin')
 var cleanHtml = require('gulp-cleanhtml')
 var stripDebug = require('gulp-strip-debug')
 var zip = require('gulp-zip')
@@ -56,10 +56,11 @@ gulp.task('scripts', function () {
 
 gulp.task('images', function () {
   return gulp.src('./src/icons/*.png')
+    .pipe(imagemin())
     .pipe(gulp.dest('./ext/icons'))
 })
 
-gulp.task('manifest', gulp.series('clean', gulp.parallel('images', 'scripts', 'html', 'styles', function () {
+gulp.task('manifest', function () {
   var options = {
     'name': packageInfo.name,
     'version': packageInfo.version,
@@ -70,7 +71,7 @@ gulp.task('manifest', gulp.series('clean', gulp.parallel('images', 'scripts', 'h
   return gulp.src('./src/manifest.json')
     .pipe(jeditor(options))
     .pipe(gulp.dest('./ext'))
-})))
+})
 
 gulp.task('zip', gulp.series('manifest', function () {
   var manifest = require('./ext/manifest')
@@ -81,6 +82,6 @@ gulp.task('zip', gulp.series('manifest', function () {
     .pipe(gulp.dest('dist'))
 }))
 
-gulp.task('default', gulp.series('manifest'))
-
+gulp.task('default', gulp.series('clean', gulp.parallel('images', 'scripts', 'html', 'styles'), 'manifest'))
+	
 gulp.task('dist', gulp.series('default', 'zip'))
