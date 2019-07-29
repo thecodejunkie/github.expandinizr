@@ -73,14 +73,14 @@ gulp.task('manifest', function () {
     .pipe(gulp.dest('./ext'))
 })
 
-gulp.task('zip', gulp.series('manifest', function () {
+gulp.task('zip', function () {
   var manifest = require('./ext/manifest')
   var fileName = manifest.name + ' v' + manifest.version + '.zip'
 
   return gulp.src('./ext/**')
     .pipe(zip(fileName))
     .pipe(gulp.dest('dist'))
-}))
+})
 
 gulp.task('default', gulp.series('clean', gulp.parallel('images', 'scripts', 'html', 'styles'), 'manifest'))
 	
