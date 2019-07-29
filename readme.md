@@ -30,6 +30,14 @@ Andreas Håkansson, Kristian Hellang
 
 ## Changelog
 
+- v2.0.0
+  - Expanded main menu bar
+  - Play nicely with [Octotree](https://github.com/buunguyen/octotree)
+  - Added page action to turn the extension on/off
+  - Removed outdated expand/collapse button for PR files
+  - Fixed right menu issues when using split-diff
+  - Fully expand timeline view
+  - Fixed PR branch/remote picker width
 - v1.8.0
   - Fixed a bug where file names were not expanded - @khellang
   - Added support for GitHub Enterprise! :sparkles: @ccampanale
