@@ -35,7 +35,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
         if ((/https:\/\/gist\.github\.com/.test(tab.url) && options.public_gist_enabled) || /\/gist\//.test(tab.url)) { // if we are in a gist site, inject gist css
           if (options.enabled) {
             chrome.tabs.executeScript(tabId, {
-              code: 'document.body.classList.add(\'expandinizr\')',
+              code: 'document.documentElement.classList.add(\'expandinizr\')',
               runAt: 'document_start'
             })
           }
@@ -45,7 +45,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
                   (!/gist\.github\.com/.test(tab.url) && !/github\.com/.test(tab.url))) { // otherwise, inject github js and css
           if (options.enabled) {
             chrome.tabs.executeScript(tabId, {
-              code: 'document.body.classList.add(\'expandinizr\')',
+              code: 'document.documentElement.classList.add(\'expandinizr\')',
               runAt: 'document_start'
             })
           }
@@ -79,7 +79,7 @@ chrome.runtime.onInstalled.addListener(function () {
     chrome.storage.sync.get(defaultOptions, function (options) {
       chrome.storage.sync.set({ enabled: !options.enabled }, function () {
         chrome.tabs.executeScript(tab.id, {
-          code: 'document.body.classList.toggle(\'expandinizr\')'
+          code: 'document.documentElement.classList.toggle(\'expandinizr\')'
         })
       })
     })
