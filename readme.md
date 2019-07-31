@@ -30,6 +30,9 @@ Andreas Håkansson, Kristian Hellang
 
 ## Changelog
 
+- v2.0.1
+  - Fixed issue with huge profile avatars
+  - Fixed issue where extension would be disabled because body hadn't been initialized yet
 - v2.0.0
   - Expanded main menu bar
   - Play nicely with [Octotree](https://github.com/buunguyen/octotree)
