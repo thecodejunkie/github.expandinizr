@@ -25,7 +25,9 @@ gulp.task('clean', function () {
 gulp.task('styles', function () {
   return gulp.src('./src/*.less')
     .pipe(sourcemaps.init())
-    .pipe(less())
+    .pipe(less({
+      strictMath: 'on'
+    }))
     .pipe(cleanCSS())
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
