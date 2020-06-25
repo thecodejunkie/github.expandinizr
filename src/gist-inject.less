@@ -2,18 +2,14 @@
 
 .ruleset(@breakpoint) {
     .width(@width) {
-        width: @breakpoint - @width !important
+        width: (@breakpoint - @width) !important
     }
 
     .max-width(@width) {
-        max-width: @breakpoint - @width !important
+        max-width: (@breakpoint - @width) !important
     }
 
-    .container-xl {
-        max-width: none !important;
-    }
-
-    .container-lg {
+    .container-lg, .container-xl {
         .max-width(120px);
     }
 
