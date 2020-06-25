@@ -1,10 +1,10 @@
 @import "includes/breakpoints";
 .ruleset(@breakpoint) {
     .width(@width) {
-        width: @breakpoint - @width  !important
+        width: (@breakpoint - @width) !important
     }
     .max-width(@width) {
-        max-width: @breakpoint - @width  !important
+        max-width: (@breakpoint - @width) !important
     }
     .pinned-repo-item {
         .width(950px);
@@ -12,10 +12,7 @@
     .range-editor .fork-suggester .css-truncate-target {
         .max-width(1120px);
     }
-    .container-xl {
-        max-width: none !important;
-    }
-    .container-lg {
+    .container-lg, .container-xl {
         .max-width(120px);
     }
     .container {
