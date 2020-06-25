@@ -27,9 +27,12 @@ Andreas Håkansson, Kristian Hellang
 - [Frank Radocaj](https://github.com/frankradocaj)
 - [Kristian Hellang](https://github.com/khellang)
 - [Phillip Haydon](https://github.com/phillip-haydon)
+- [Benjamin Chris](https://github.com/LuRenJiasWorld)
 
 ## Changelog
 
+- v2.0.2
+  - Adapted to GitHub's new UI - @LuRenJiasWorld
 - v2.0.1
   - Fixed issue with huge profile avatars
   - Fixed issue where extension would be disabled because body hadn't been initialized yet
